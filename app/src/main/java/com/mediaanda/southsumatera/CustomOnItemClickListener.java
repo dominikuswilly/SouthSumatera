@@ -14,7 +14,7 @@ public class CustomOnItemClickListener implements View.OnClickListener {
     private interface OnItemClickCallback{
         void onItemClicked(View view, int position);
     }
-
+    // disini
     @Override
     public void onClick(View v) {
         onItemClickCallback.onItemClicked(v, position);
