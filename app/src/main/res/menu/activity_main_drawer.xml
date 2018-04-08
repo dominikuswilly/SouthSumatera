@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_destination"
+            android:icon="@drawable/ic_menu_destination"
+            android:title="Destination" />
+        <item
+            android:id="@+id/nav_favourite"
+            android:icon="@drawable/ic_menu_favourite"
+            android:title="Favourite"
+            />
+        <item
+            android:id="@+id/nav_airport"
+            android:icon="@drawable/ic_menu_airport"
+            android:title="Airport"
+            />
+        <item
+            android:id="@+id/nav_restaurant"
+            android:icon="@drawable/ic_menu_restaurant"
+            android:title="Restaurant"
+            />
+        <item
+            android:id="@+id/nav_phone"
+            android:icon="@drawable/ic_menu_phone"
+            android:title="Phone"
+            />
+        <item
+            android:id="@+id/nav_taxi"
+            android:icon="@drawable/ic_menu_taxi"
+            android:title="Taxi"
+            />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+        </menu>
+    </item>
+
+</menu>
