@@ -1,7 +1,7 @@
 package com.mediaanda.southsumatera;
 
 public class Destination {
-    private String name, destination, photo;
+    private String name, description, photo;
 
     public String getName() {
         return name;
@@ -11,12 +11,12 @@ public class Destination {
         this.name = name;
     }
 
-    public String getDestination() {
-        return destination;
+    public String getDescription() {
+        return description;
     }
 
-    public void setDestination(String destination) {
-        this.destination = destination;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getPhoto() {
