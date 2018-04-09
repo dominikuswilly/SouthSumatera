@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
@@ -46,7 +47,12 @@ public class CardViewDestinationAdapter extends RecyclerView.Adapter<CardViewDes
         holder.tvName.setText(d.getName());
         holder.tvDescription.setText(d.getDestination());
 
-        //holder.btnFavorite.setOnClickListener(new CustomOn);
+        holder.btnDetail.setOnClickListener(new CustomOnItemClickListener(position, new CustomOnItemClickListener.OnItemClickCallback() {
+            @Override
+            public void onItemClicked(View view, int position) {
+                Toast.makeText(context, "Share " + getListDestination().get(position).getName(), Toast.LENGTH_SHORT).show();
+            }
+        }));
 
     }
 
@@ -66,14 +72,14 @@ public class CardViewDestinationAdapter extends RecyclerView.Adapter<CardViewDes
     class CardViewViewHolder extends RecyclerView.ViewHolder{
         ImageView imgPhoto;
         TextView tvName, tvDescription;
-        Button btnFavorite, btnShare;
+        Button btnDetail, btnShare;
         CardViewViewHolder(View itemView) {
             super(itemView);
             imgPhoto = (ImageView)itemView.findViewById(R.id.img_item_photo);
             tvName = (TextView)itemView.findViewById(R.id.tv_item_name);
             tvDescription = (TextView)itemView.findViewById(R.id.tv_item_description);
-            btnFavorite = (Button)itemView.findViewById(R.id.btn_set_favorite);
-            btnShare = (Button)itemView.findViewById(R.id.btn_set_share);
+            btnDetail = (Button)itemView.findViewById(R.id.btn_Detail);
+            btnShare = (Button)itemView.findViewById(R.id.btn_share);
         }
     }
 }
