@@ -1,7 +1,19 @@
 package com.mediaanda.southsumatera;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Destination {
-    private String name, description, photo;
+    private String name, description;
+    int photoId;
+
+    Destination(String name, String description, int photoId){
+        this.name = name;
+        this.description = description;
+        this.photoId = photoId;
+    }
+
+    private List<Destination> destinationList;
 
     public String getName() {
         return name;
@@ -19,11 +31,13 @@ public class Destination {
         this.description = description;
     }
 
-    public String getPhoto() {
-        return photo;
+    public int getPhotoId() {
+        return photoId;
     }
 
-    public void setPhoto(String photo) {
-        this.photo = photo;
+    public void setPhotoId(int photoId) {
+        this.photoId = photoId;
     }
+
+
 }
