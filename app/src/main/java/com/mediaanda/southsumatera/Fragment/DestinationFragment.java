@@ -1,4 +1,4 @@
-package com.mediaanda.southsumatera;
+package com.mediaanda.southsumatera.Fragment;
 
 
 import android.os.Bundle;
@@ -9,11 +9,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.mediaanda.southsumatera.Adapter.CardViewDestinationAdapter;
+import com.mediaanda.southsumatera.Destination;
+import com.mediaanda.southsumatera.R;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import butterknife.BindView;
-import butterknife.ButterKnife;
 
 
 /**

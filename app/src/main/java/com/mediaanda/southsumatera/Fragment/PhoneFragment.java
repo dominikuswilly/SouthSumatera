@@ -1,4 +1,4 @@
-package com.mediaanda.southsumatera;
+package com.mediaanda.southsumatera.Fragment;
 
 
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.mediaanda.southsumatera.R;
 
 
 /**

@@ -1,4 +1,4 @@
-package com.mediaanda.southsumatera;
+package com.mediaanda.southsumatera.Adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -10,10 +10,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.RequestOptions;
+import com.mediaanda.southsumatera.Destination;
+import com.mediaanda.southsumatera.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +21,7 @@ public class CardViewDestinationAdapter extends RecyclerView.Adapter<CardViewDes
     private List<Destination> listDestination;
     private Context context;
 
-    CardViewDestinationAdapter(List<Destination> listDestination){
+    public CardViewDestinationAdapter(List<Destination> listDestination){
         this.listDestination = listDestination;
     }
 
@@ -61,7 +60,7 @@ public class CardViewDestinationAdapter extends RecyclerView.Adapter<CardViewDes
         CardView cv;
         ImageView imgPhoto;
         TextView tvName, tvDescription;
-        Button btnDetail, btnShare;
+        Button btnDetail;
 
         CardViewViewHolder(View itemView) {
             super(itemView);
@@ -70,7 +69,7 @@ public class CardViewDestinationAdapter extends RecyclerView.Adapter<CardViewDes
             tvName = (TextView)itemView.findViewById(R.id.tv_item_name);
             tvDescription = (TextView)itemView.findViewById(R.id.tv_item_description);
             btnDetail = (Button)itemView.findViewById(R.id.btn_Detail);
-            btnShare = (Button)itemView.findViewById(R.id.btn_share);
+
         }
     }
 

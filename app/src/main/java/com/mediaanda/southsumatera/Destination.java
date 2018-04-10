@@ -7,7 +7,7 @@ public class Destination {
     private String name, description;
     int photoId;
 
-    Destination(String name, String description, int photoId){
+    public Destination(String name, String description, int photoId){
         this.name = name;
         this.description = description;
         this.photoId = photoId;
