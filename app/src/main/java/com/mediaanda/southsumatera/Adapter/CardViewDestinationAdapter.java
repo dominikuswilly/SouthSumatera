@@ -10,7 +10,11 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
+import com.mediaanda.southsumatera.CustomOnItemClickListener;
 import com.mediaanda.southsumatera.Destination;
 import com.mediaanda.southsumatera.R;
 
@@ -25,7 +29,6 @@ public class CardViewDestinationAdapter extends RecyclerView.Adapter<CardViewDes
         this.listDestination = listDestination;
     }
 
-
     @Override
     public CardViewViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_cardview_destination, parent, false);
@@ -35,11 +38,18 @@ public class CardViewDestinationAdapter extends RecyclerView.Adapter<CardViewDes
     }
 
     @Override
-    public void onBindViewHolder(CardViewViewHolder holder, int position) {
+    public void onBindViewHolder(final CardViewViewHolder holder, int position) {
         holder.tvName.setText(listDestination.get(position).getName());
         holder.tvDescription.setText(listDestination.get(position).getDescription());
+
         holder.imgPhoto.setImageResource(listDestination.get(position).getPhotoId());
 
+        holder.btnDetail.setOnClickListener(new CustomOnItemClickListener(position, new CustomOnItemClickListener.OnItemClickCallback() {
+            @Override
+            public void onItemClicked(View view, int position) {
+                Toast.makeText(view.getContext(), "Pilih : " + listDestination.get(position).getName(), Toast.LENGTH_SHORT).show();
+            }
+        }));
     }
 
     @Override
