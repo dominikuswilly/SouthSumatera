@@ -1,7 +1,12 @@
 package com.mediaanda.southsumatera.Adapter;
 
+import android.app.Activity;
 import android.content.Context;
 import android.support.annotation.NonNull;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -16,6 +21,8 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.mediaanda.southsumatera.CustomOnItemClickListener;
 import com.mediaanda.southsumatera.Destination;
+import com.mediaanda.southsumatera.Fragment.TaxiFragment;
+import com.mediaanda.southsumatera.PalembangFragment;
 import com.mediaanda.southsumatera.R;
 
 import java.util.ArrayList;
@@ -47,7 +54,15 @@ public class CardViewDestinationAdapter extends RecyclerView.Adapter<CardViewDes
         holder.btnDetail.setOnClickListener(new CustomOnItemClickListener(position, new CustomOnItemClickListener.OnItemClickCallback() {
             @Override
             public void onItemClicked(View view, int position) {
-                Toast.makeText(view.getContext(), "Pilih : " + listDestination.get(position).getName(), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(view.getContext(), "Pilih : " + listDestination.get(position).getName(), Toast.LENGTH_SHORT).show();
+                FragmentManager manager = ((AppCompatActivity)view.getContext()).getSupportFragmentManager();
+                FragmentTransaction ft = manager.beginTransaction();
+                if(position == 0){
+                    PalembangFragment palembangFragment = new PalembangFragment();
+                    ft.replace(R.id.frame_container, palembangFragment,"Destination");
+                    ft.addToBackStack("Destination");
+                    ft.commit();
+                }
             }
         }));
     }

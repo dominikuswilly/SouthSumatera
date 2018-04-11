@@ -49,10 +49,22 @@ public class DestinationFragment extends Fragment {
     private void initializeData(){
         listDestination = new ArrayList<>();
         listDestination.add(new Destination("Palembang", "Keterangan Palembang", R.mipmap.ic_menu_airport));
+        listDestination.add(new Destination("Banyuasin", "Keterangan Banyuasin", R.mipmap.ic_menu_airport));
         listDestination.add(new Destination("Empat Lawang", "Keterangan Empat Lawang", R.mipmap.ic_menu_airport));
+        listDestination.add(new Destination("Lahat", "Keterangan Lahat", R.mipmap.ic_menu_airport));
+        listDestination.add(new Destination("Lubuk Linggau", "Keterangan Lubuk Linggau", R.mipmap.ic_menu_airport));
+        listDestination.add(new Destination("Muara Enim", "Keterangan Muara Enim", R.mipmap.ic_menu_airport));
+        listDestination.add(new Destination("Musi Banyuasin", "Keterangan Musi Banyuasin", R.mipmap.ic_menu_airport));
         listDestination.add(new Destination("Musi Rawas", "Keterangan Musi Rawas", R.mipmap.ic_menu_airport));
         listDestination.add(new Destination("Musi Rawas Utara", "Keterangan Musi Rawas Utara", R.mipmap.ic_menu_airport));
-        listDestination.add(new Destination("Lahat", "Keterangan Lahat", R.mipmap.ic_menu_airport));
+        listDestination.add(new Destination("Ogan Komering Ilir", "Keterangan Ogan Komering Ilir", R.mipmap.ic_menu_airport));
+        listDestination.add(new Destination("Ogan Komering Ulu", "Keterangan Ogan Komering Ulu", R.mipmap.ic_menu_airport));
+        listDestination.add(new Destination("OKU Selatan", "Keterangan OKU Selatan", R.mipmap.ic_menu_airport));
+        listDestination.add(new Destination("OKU Timur", "Keterangan OKU Timur", R.mipmap.ic_menu_airport));
+        listDestination.add(new Destination("Pagaralam", "Keterangan Pagar Alam", R.mipmap.ic_menu_airport));
+        listDestination.add(new Destination("Pali", "Keterangan Pali", R.mipmap.ic_menu_airport));
+        listDestination.add(new Destination("Prabumulih", "Keterangan Prabumulih", R.mipmap.ic_menu_airport));
+
     }
 
     private void initializeAdapter(){
