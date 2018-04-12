@@ -53,7 +53,7 @@ public class PalembangFragment extends Fragment {
 
     private void initializeData(){
         listDestination = new ArrayList<>();
-        listDestination.add(new Destination("Ampera Bridge", "Keterangan Ampera", R.mipmap.ic_menu_airport));
+        listDestination.add(new Destination("Ampera Bridge", getResources().getString(R.string.deskripsi_ampera), R.mipmap.ampera_bridge));
         listDestination.add(new Destination("Al-Qur\'an Al-Akbar", "Keterangan Al-Qur\'an Al-Akbar", R.mipmap.ic_menu_airport));
         listDestination.add(new Destination("Jakabaring Sport City", "Keterangan JSC", R.mipmap.ic_menu_airport));
         listDestination.add(new Destination("Water Tower", "Keterangan Water Tower", R.mipmap.ic_menu_airport));
