@@ -17,6 +17,7 @@ import android.widget.TextView;
 import com.mediaanda.southsumatera.CustomOnItemClickListener;
 import com.mediaanda.southsumatera.Destination;
 import com.mediaanda.southsumatera.Fragment.AmperaFragment;
+import com.mediaanda.southsumatera.Fragment.QuranFragment;
 import com.mediaanda.southsumatera.R;
 
 import java.util.ArrayList;
@@ -54,9 +55,13 @@ public class CardViewPalembangAdapter extends RecyclerView.Adapter<CardViewPalem
                 if(position == 0){
                     AmperaFragment amperaFragment = new AmperaFragment();
                     ft.replace(R.id.frame_container, amperaFragment, "Palembang");
-                    ft.addToBackStack("Palembang");
-                    ft.commit();
                 }
+                else if(position == 1){
+                    QuranFragment quranFragment = new QuranFragment();
+                    ft.replace(R.id.frame_container, quranFragment, "Palembang");
+                }
+                ft.addToBackStack("Palembang");
+                ft.commit();
             }
         }));
     }

@@ -50,7 +50,7 @@ public class DestinationFragment extends Fragment {
 
     private void initializeData(){
         listDestination = new ArrayList<>();
-        listDestination.add(new Destination("Palembang", "Keterangan Palembang", R.mipmap.ic_menu_airport));
+        listDestination.add(new Destination("Palembang", "Keterangan Palembang", R.mipmap.ampera_bridge));
         listDestination.add(new Destination("Banyuasin", "Keterangan Banyuasin", R.mipmap.ic_menu_airport));
         listDestination.add(new Destination("Empat Lawang", "Keterangan Empat Lawang", R.mipmap.ic_menu_airport));
         listDestination.add(new Destination("Lahat", "Keterangan Lahat", R.mipmap.ic_menu_airport));
