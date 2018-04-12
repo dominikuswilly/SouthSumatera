@@ -115,10 +115,9 @@ public class MainActivity extends AppCompatActivity
         } else if(id == R.id.nav_destination){
             title = "Destination";
             fragment = new DestinationFragment();
-        } else if(id == R.id.nav_taxi){
-            title = "Taxi";
+        } else if(id == R.id.nav_transportation){
+            title = "Transportation";
             fragment = new TaxiFragment();
-
         }
 
         if(fragment != null){

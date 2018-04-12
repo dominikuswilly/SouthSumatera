@@ -29,9 +29,14 @@
             android:title="Phone"
             />
         <item
-            android:id="@+id/nav_taxi"
-            android:icon="@drawable/ic_menu_taxi"
+            android:id="@+id/nav_transportation"
+            android:icon="@drawable/ic_menu_transportation"
             android:title="Taxi"
+            />
+        <item
+            android:id="@+id/nav_hotel"
+            android:icon="@drawable/ic_menu_hotel"
+            android:title="Hotel"
             />
         <item
             android:id="@+id/nav_event"
