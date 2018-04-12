@@ -3,12 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PalembangFragment">
+    tools:context=".Fragment.PalembangFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_destination"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Ini Halaman Palembang" />
+        tools:listitem="@layout/item_cardview_destination"/>
 
 </FrameLayout>

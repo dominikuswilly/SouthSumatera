@@ -33,6 +33,11 @@
             android:icon="@drawable/ic_menu_taxi"
             android:title="Taxi"
             />
+        <item
+            android:id="@+id/nav_event"
+            android:icon="@drawable/ic_menu_event"
+            android:title="Event 2008"
+            />
     </group>
 
     <item android:title="Communicate">

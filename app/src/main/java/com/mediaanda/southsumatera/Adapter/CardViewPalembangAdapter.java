@@ -16,22 +16,22 @@ import android.widget.TextView;
 
 import com.mediaanda.southsumatera.CustomOnItemClickListener;
 import com.mediaanda.southsumatera.Destination;
-import com.mediaanda.southsumatera.Fragment.PalembangFragment;
+import com.mediaanda.southsumatera.Fragment.AmperaFragment;
 import com.mediaanda.southsumatera.R;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class CardViewDestinationAdapter extends RecyclerView.Adapter<CardViewDestinationAdapter.CardViewViewHolder> {
+public class CardViewPalembangAdapter extends RecyclerView.Adapter<CardViewPalembangAdapter.CardViewViewHolder> {
     private List<Destination> listDestination;
     private Context context;
 
-    public CardViewDestinationAdapter(List<Destination> listDestination){
+    public CardViewPalembangAdapter(List<Destination> listDestination){
         this.listDestination = listDestination;
     }
 
     @Override
-    public CardViewViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public CardViewViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_cardview_destination, parent, false);
         CardViewViewHolder cvh = new CardViewViewHolder(view);
 
@@ -39,7 +39,7 @@ public class CardViewDestinationAdapter extends RecyclerView.Adapter<CardViewDes
     }
 
     @Override
-    public void onBindViewHolder(final CardViewViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull CardViewViewHolder holder, int position) {
         holder.tvName.setText(listDestination.get(position).getName());
         holder.tvDescription.setText(listDestination.get(position).getDescription());
 
@@ -52,22 +52,22 @@ public class CardViewDestinationAdapter extends RecyclerView.Adapter<CardViewDes
                 FragmentManager manager = ((AppCompatActivity)view.getContext()).getSupportFragmentManager();
                 FragmentTransaction ft = manager.beginTransaction();
                 if(position == 0){
-                    PalembangFragment palembangFragment = new PalembangFragment();
-                    ft.replace(R.id.frame_container, palembangFragment,"Destination");
-                    ft.addToBackStack("Destination");
+                    AmperaFragment amperaFragment = new AmperaFragment();
+                    ft.replace(R.id.frame_container, amperaFragment, "Palembang");
+                    ft.addToBackStack("Palembang");
                     ft.commit();
                 }
             }
         }));
     }
 
+    public void setListDestination(ArrayList<Destination> listDestination) {
+        this.listDestination = listDestination;
+    }
+
     @Override
     public void onAttachedToRecyclerView(@NonNull RecyclerView recyclerView) {
         super.onAttachedToRecyclerView(recyclerView);
-    }
-
-    public void setListDestination(ArrayList<Destination> listDestination) {
-        this.listDestination = listDestination;
     }
 
     @Override
@@ -91,7 +91,4 @@ public class CardViewDestinationAdapter extends RecyclerView.Adapter<CardViewDes
 
         }
     }
-
-
-
 }

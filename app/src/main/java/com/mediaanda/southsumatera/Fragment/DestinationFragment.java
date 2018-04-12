@@ -43,6 +43,8 @@ public class DestinationFragment extends Fragment {
 
         initializeData();
         initializeAdapter();
+
+        getActivity().setTitle("South Sumatera");
         return view;
     }
 
