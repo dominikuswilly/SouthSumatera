@@ -18,6 +18,7 @@ import com.mediaanda.southsumatera.CustomOnItemClickListener;
 import com.mediaanda.southsumatera.Destination;
 import com.mediaanda.southsumatera.Fragment.AmperaFragment;
 import com.mediaanda.southsumatera.Fragment.QuranFragment;
+import com.mediaanda.southsumatera.JakabaringFragment;
 import com.mediaanda.southsumatera.R;
 
 import java.util.ArrayList;
@@ -59,6 +60,10 @@ public class CardViewPalembangAdapter extends RecyclerView.Adapter<CardViewPalem
                 else if(position == 1){
                     QuranFragment quranFragment = new QuranFragment();
                     ft.replace(R.id.frame_container, quranFragment, "Palembang");
+                }
+                else if(position == 2){
+                    JakabaringFragment jakabaringFragment = new JakabaringFragment();
+                    ft.replace(R.id.frame_container, jakabaringFragment, "Palembang");
                 }
                 ft.addToBackStack("Palembang");
                 ft.commit();
