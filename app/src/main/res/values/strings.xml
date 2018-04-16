@@ -26,4 +26,93 @@
         This stadium belongs to the category of 5 biggest stadium in Indonesia.
         With capacity to accommodate 36,000 spectator, this stadium also be used as a place for events in Palembang.
     </string>
+
+    <string name="deskripsi_water_tower">
+        The building is located in the city center, and was originally used as a water tower, but now serves as Mayor of Palembang\'s office.
+        The building was built in 1929 following the draft from Ir. S. Snuijf and completed in 1930.
+    </string>
+
+    <string name="deskripsi_siguntang">
+        Siguntang hill is the highest point Palembang and has a height of 29-30 meters above sea level.
+        For most people living in the surrounding hills, this place is considered sacred.
+        This hill is also home to archaelogical relics pertaining to the Kingdom Srivijaya, in the 6th century  to the 3rd century.
+        At a higher place in the complex, there are some tomb is said to be the tomb of members of the Royal Malay-Srivijaya and some heroes.
+    </string>
+
+    <string name="deskripsi_kambang_iwak">
+        The lake is located in the tourist center close to the residence of the Mayor of Palembang.
+        Around the edge of this lake there are parks and recreation areas highly populated by visitors during holidays.
+        On Sunday you can also take morning exercise together.
+    </string>
+
+    <string name="deskripsi_almunawar">
+        This village was built by Habib Abdurrahman bin Muhammad Al Munawwar and have a building with a mix of middle eastern architecture, Palembang and the Malay culture over 225 years old.
+        If you go to this Arab Village, you should try their specialty coffee blend which is no less tasty compared with coffee from other regions. But of course, visitors are expected to wear decent clothes when entering this village.
+    </string>
+
+    <string name="deskripsi_kapitan_village">
+        This village has the oldest Chinese nuanced stilt house in Palembang. Among some of the houses, most attractive is the Tjoa Ham Hin House with several centuries old furniture in it.
+        There were also Chinese temple which one of the oldest temples in Palembang. Before becomng a settlement people of Chinese descent, this village also known as the village of Kapitan Tanggo Rajo where strangers and newcomers from all over the archipelago settled.
+    </string>
+
+    <string name="deskripsi_kawah_tengkurep">
+     In the necropolis of this empire there is the tomb of Sultan Mahmud Badaruddin I and his wives, as well as the graves of important figures in the Sultanate of Palembang.
+        Tengkurep Crater name comes from the shape of the roof of the main funeral building that shaped likw a overtuned wok.
+        The architecture of this funeral building is also unique because it is a collaboration of Malay architecture, India, and China.
+    </string>
+
+    <string name="deskripsi_masjid_agung">
+        Agung Mosque is the one of the pride of Palembang people. This magnificent building was bult by Sultan Mahmud Badaruddin I in 1738.
+        It has been renovated several times after serving a symvbol of the city of Palembang.
+        The structure of the mosque building is unique because it consists of a mixture of Chinese and European architecture.
+    </string>
+
+    <string name="deskripsi_monpera">
+        MONPERA or Monumen Perjuangan Rakyat is located in the city center, adjacent to the Grand Mosque and the Ampera Bridge.
+        MONPERA was built to commemorate the struggle of the combatants in a war that lasted for 5 days and 5 nights.
+        Inside the building there is a historical relic of the war.
+    </string>
+
+    <string name="deskripsi_smbii_museum">
+        The museum is named after the reigning Sultan of Palembang in 1803-1821.
+        Originally this museum is the palace of the Palembang Sultanate called Kraton or palace Kuto Kuto Lamo Kecik once the building is mostly made of wood.
+        In the museum where there are various types of collections of archeology, ethnography, biology, art and especially the collection of currencies.
+        Various kinds inscriptions, ancient statues like Buddha and Ganesha Amarawati also other relics of the era of Sriwijaya also available at the museum.
+    </string>
+
+    <string name="deskripsi_balaputeradewa_museum">
+        The museum consits of two buildings, Balaputera Dewa and Sriwijaya.
+        Balaputera Dewa name itself comes from the name of a king who successfully led the kingdom of Srivijaya as Maritim in 8-9 centuries.
+        In this museum there is a collection depicting the cultures of South Sumatra and also some megaliths.
+        This collection consists of a variety of objects historiography, ethnography, feology, ceramics, modern technology, art, flora and fauna and geology.
+        In addition there is also Limas House printed Rp 10.000 banknotes in circulation after 2009.
+    </string>
+
+    <string name="deskripsi_sriwijaya_kingdom_archeological_park">
+        Sriwijaya Kingdom Archaelogical Park is also popularly known as the Karanganyar Site.
+        The location of this park is expected as a residential area and park at the time of the Kingdom Sriwijaya.
+        The canals in this area certainly manmade and many artifacts that show the daily activities of the community.
+        In the middle of the park is also placed the Kedukan Bukit Inscription and at the other end there is the replica of Cheng Ho Ship.
+    </string>
+
+    <string name="deskripsi_kemaro_island">
+        This historic and legendary Island is known as Kemaro Island.
+        Chinese architecture and the religious culture can be seen from the temple.
+        Every Chinese New Year, the island is always crowded with domestic and foreign tourists who come to prayor visit graves.
+        In the pagoda there is also the tomb of Siti Fatimah.
+        The legend that says that the Island Kemaro formed after Siti Fatimah Tan Bun An after diving into the Musi River to take possession of his parents.
+    </string>
+
+    <string name="deskripsi_16_ilir_market">
+        This market is estimated to begin growing in the mid-19th century. Trading activity, which is already started during the Palembang Darussalam Sultanate, mainly takes place on the banks of the Musi River.
+        However, the trade that took place at that time is not permanent or persistent.
+        The traders, who generally come from areas Uluan (Musi River upstream) brought crops, especially fruits, vegetables, and other needs by Kajang Boat.
+        Even now, visitors can still see the passing ships on the Musi River from the top floor of 16 Ilir Market.
+    </string>
+
+    <string name="deskripsi_songket_crafter">
+        Songket Craft Center is located in Tangga Buntung, precisely on Ki Gede Ingi Suro Street, 30 Ilir Sub District, IB II, Palembang.
+        Here you can find a variety of shops, selling songket, such as Fikri Collection, Cek Ilah, Zainal Songket,and others.
+        The price of songket is unique compared to the others, because the fabric is waven using gold thread.
+    </string>
 </resources>

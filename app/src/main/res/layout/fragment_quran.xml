@@ -14,7 +14,7 @@
             android:id="@+id/cv_quran1"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:layout_marginBottom="10dp"
+            android:layout_margin="5dp"
             card_view:cardCornerRadius="4dp">
 
             <ImageView
@@ -28,7 +28,7 @@
             android:id="@+id/cv_quran2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:layout_margin="5dp"
             card_view:cardCornerRadius="4dp">
 
             <TextView

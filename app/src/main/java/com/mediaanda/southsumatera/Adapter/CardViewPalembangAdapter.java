@@ -20,6 +20,7 @@ import com.mediaanda.southsumatera.Fragment.AmperaFragment;
 import com.mediaanda.southsumatera.Fragment.QuranFragment;
 import com.mediaanda.southsumatera.JakabaringFragment;
 import com.mediaanda.southsumatera.R;
+import com.mediaanda.southsumatera.WaterTowerFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -64,6 +65,10 @@ public class CardViewPalembangAdapter extends RecyclerView.Adapter<CardViewPalem
                 else if(position == 2){
                     JakabaringFragment jakabaringFragment = new JakabaringFragment();
                     ft.replace(R.id.frame_container, jakabaringFragment, "Palembang");
+                }
+                else if(position == 3){
+                    WaterTowerFragment waterTowerFragment = new WaterTowerFragment();
+                    ft.replace(R.id.frame_container, waterTowerFragment, "Palembang");
                 }
                 ft.addToBackStack("Palembang");
                 ft.commit();

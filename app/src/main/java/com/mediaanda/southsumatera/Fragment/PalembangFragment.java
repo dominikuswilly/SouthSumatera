@@ -56,8 +56,8 @@ public class PalembangFragment extends Fragment {
         listDestination.add(new Destination("Ampera Bridge", getResources().getString(R.string.deskripsi_ampera), R.mipmap.ampera_bridge));
         listDestination.add(new Destination("Al-Qur\'an Al-Akbar", getResources().getString(R.string.deskripsi_quran_alakbar), R.mipmap.quran_al_akbar));
         listDestination.add(new Destination("Jakabaring Sport City", getResources().getString(R.string.deskripsi_jakabaring), R.mipmap.jakabaring));
-        listDestination.add(new Destination("Water Tower", "Keterangan Water Tower", R.mipmap.ic_menu_airport));
-        listDestination.add(new Destination("Siguntang Hill", "Keterangan Siguntang Hill", R.mipmap.ic_menu_airport));
+        listDestination.add(new Destination("Water Tower", getResources().getString(R.string.deskripsi_water_tower), R.mipmap.kantor_ledeng));
+        listDestination.add(new Destination("Siguntang Hill", getResources().getString(R.string.deskripsi_siguntang) , R.mipmap.ic_menu_airport));
         listDestination.add(new Destination("Kambang Iwak", "Keterangan Kambang Iwak", R.mipmap.ic_menu_airport));
         listDestination.add(new Destination("Kapitan Village", "Keterangan Kapitan Village", R.mipmap.ic_menu_airport));
         listDestination.add(new Destination("Al-Munawwar Village", "Keterangan Al-Munawwar Village", R.mipmap.ic_menu_airport));
