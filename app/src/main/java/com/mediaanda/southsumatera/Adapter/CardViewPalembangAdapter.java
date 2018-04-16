@@ -18,9 +18,9 @@ import com.mediaanda.southsumatera.CustomOnItemClickListener;
 import com.mediaanda.southsumatera.Destination;
 import com.mediaanda.southsumatera.Fragment.AmperaFragment;
 import com.mediaanda.southsumatera.Fragment.QuranFragment;
-import com.mediaanda.southsumatera.JakabaringFragment;
+import com.mediaanda.southsumatera.Fragment.JakabaringFragment;
 import com.mediaanda.southsumatera.R;
-import com.mediaanda.southsumatera.WaterTowerFragment;
+import com.mediaanda.southsumatera.Fragment.WaterTowerFragment;
 
 import java.util.ArrayList;
 import java.util.List;

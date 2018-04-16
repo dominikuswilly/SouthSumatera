@@ -1,4 +1,4 @@
-package com.mediaanda.southsumatera;
+package com.mediaanda.southsumatera.Fragment;
 
 
 import android.os.Bundle;
@@ -7,14 +7,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.mediaanda.southsumatera.R;
+
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class JakabaringFragment extends Fragment {
+public class WaterTowerFragment extends Fragment {
 
 
-    public JakabaringFragment() {
+    public WaterTowerFragment() {
         // Required empty public constructor
     }
 
@@ -22,10 +24,10 @@ public class JakabaringFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_jakabaring, container, false);
+        View view = inflater.inflate(R.layout.fragment_water_tower, container, false);
 
 
-        getActivity().setTitle("Jakabaring Sport City");
+        getActivity().setTitle("Water Tower");
         return view;
     }
 

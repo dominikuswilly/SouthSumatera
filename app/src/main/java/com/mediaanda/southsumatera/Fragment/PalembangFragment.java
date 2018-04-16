@@ -57,19 +57,19 @@ public class PalembangFragment extends Fragment {
         listDestination.add(new Destination("Al-Qur\'an Al-Akbar", getResources().getString(R.string.deskripsi_quran_alakbar), R.mipmap.quran_al_akbar));
         listDestination.add(new Destination("Jakabaring Sport City", getResources().getString(R.string.deskripsi_jakabaring), R.mipmap.jakabaring));
         listDestination.add(new Destination("Water Tower", getResources().getString(R.string.deskripsi_water_tower), R.mipmap.kantor_ledeng));
-        listDestination.add(new Destination("Siguntang Hill", getResources().getString(R.string.deskripsi_siguntang) , R.mipmap.ic_menu_airport));
-        listDestination.add(new Destination("Kambang Iwak", "Keterangan Kambang Iwak", R.mipmap.ic_menu_airport));
-        listDestination.add(new Destination("Kapitan Village", "Keterangan Kapitan Village", R.mipmap.ic_menu_airport));
-        listDestination.add(new Destination("Al-Munawwar Village", "Keterangan Al-Munawwar Village", R.mipmap.ic_menu_airport));
-        listDestination.add(new Destination("Kawah Tengkurep", "Keterangan Kawah Tengkurep", R.mipmap.ic_menu_airport));
-        listDestination.add(new Destination("Agung Mosque", "Keterangan Agung Mosque", R.mipmap.ic_menu_airport));
-        listDestination.add(new Destination("Monpera", "Keterangan Monpera", R.mipmap.ic_menu_airport));
-        listDestination.add(new Destination("SMB II Museum", "Keterangan SMB II Museum", R.mipmap.ic_menu_airport));
-        listDestination.add(new Destination("Balaputeradewa Museum", "Keterangan Balaputeradewa Museum", R.mipmap.ic_menu_airport));
-        listDestination.add(new Destination("Sriwijaya Kingdom Archeological Park", "Keterangan Sriwijaya Kingdom Archeological Park", R.mipmap.ic_menu_airport));
-        listDestination.add(new Destination("Kemaro Island", "Keterangan Kemaro Island", R.mipmap.ic_menu_airport));
-        listDestination.add(new Destination("16 Ilir Market", "Keterangan 16 Ilir Market", R.mipmap.ic_menu_airport));
-        listDestination.add(new Destination("Songket Craft Center", "Keterangan Songket Craft Center", R.mipmap.ic_menu_airport));
+        listDestination.add(new Destination("Siguntang Hill", getResources().getString(R.string.deskripsi_siguntang) , R.mipmap.bukit_siguntang));
+        listDestination.add(new Destination("Kambang Iwak", getResources().getString(R.string.deskripsi_kambang_iwak), R.mipmap.kambang_iwak));
+        listDestination.add(new Destination("Kapitan Village", getResources().getString(R.string.deskripsi_kapitan_village), R.mipmap.kampung_kapitan));
+        listDestination.add(new Destination("Al-Munawwar Village", getResources().getString(R.string.deskripsi_almunawar), R.mipmap.kampung_arab));
+        listDestination.add(new Destination("Kawah Tengkurep", getResources().getString(R.string.deskripsi_kawah_tengkurep), R.mipmap.kawah_tengkurep));
+        listDestination.add(new Destination("Agung Mosque", getResources().getString(R.string.deskripsi_masjid_agung), R.mipmap.masjid_agung));
+        listDestination.add(new Destination("Monpera", getResources().getString(R.string.deskripsi_monpera), R.mipmap.monpera));
+        listDestination.add(new Destination("SMB II Museum", getResources().getString(R.string.deskripsi_smbii_museum), R.mipmap.smbii_museum));
+        listDestination.add(new Destination("Balaputeradewa Museum", getResources().getString(R.string.deskripsi_balaputeradewa_museum), R.mipmap.balaputra_dewa));
+        listDestination.add(new Destination("Sriwijaya Kingdom Archeological Park", getResources().getString(R.string.deskripsi_sriwijaya_kingdom_archeological_park), R.mipmap.taman_budaya));
+        listDestination.add(new Destination("Kemaro Island", getResources().getString(R.string.deskripsi_kemaro_island), R.mipmap.kemaro_island));
+        listDestination.add(new Destination("16 Ilir Market", getResources().getString(R.string.deskripsi_16_ilir_market), R.mipmap.pasar16_ilir));
+        listDestination.add(new Destination("Songket Craft Center", getResources().getString(R.string.deskripsi_songket_crafter), R.mipmap.songket_crafter));
 
     }
 
