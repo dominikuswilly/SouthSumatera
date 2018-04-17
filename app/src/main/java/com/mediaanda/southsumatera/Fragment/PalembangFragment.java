@@ -70,7 +70,6 @@ public class PalembangFragment extends Fragment {
         listDestination.add(new Destination("Kemaro Island", getResources().getString(R.string.deskripsi_kemaro_island), R.mipmap.kemaro_island));
         listDestination.add(new Destination("16 Ilir Market", getResources().getString(R.string.deskripsi_16_ilir_market), R.mipmap.pasar16_ilir));
         listDestination.add(new Destination("Songket Craft Center", getResources().getString(R.string.deskripsi_songket_crafter), R.mipmap.songket_crafter));
-
     }
 
     private void initializeAdapter(){

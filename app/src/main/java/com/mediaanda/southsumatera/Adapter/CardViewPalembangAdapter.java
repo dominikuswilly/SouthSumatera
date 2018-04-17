@@ -14,13 +14,26 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.mediaanda.southsumatera.BalaputeraDewaFragment;
+import com.mediaanda.southsumatera.Fragment.AlMunawarFragment;
 import com.mediaanda.southsumatera.CustomOnItemClickListener;
 import com.mediaanda.southsumatera.Destination;
 import com.mediaanda.southsumatera.Fragment.AmperaFragment;
 import com.mediaanda.southsumatera.Fragment.QuranFragment;
 import com.mediaanda.southsumatera.Fragment.JakabaringFragment;
+import com.mediaanda.southsumatera.Fragment.SiguntangHillFragment;
+import com.mediaanda.southsumatera.Fragment.KambangIwakFragment;
+import com.mediaanda.southsumatera.Fragment.KapitanVillageFragment;
+import com.mediaanda.southsumatera.Fragment.KawahTengkurepFragment;
+import com.mediaanda.southsumatera.Fragment.MasjidAgungFragment;
+import com.mediaanda.southsumatera.KemaroIslandFragment;
+import com.mediaanda.southsumatera.Market16IlirFragment;
+import com.mediaanda.southsumatera.MonperaFragment;
 import com.mediaanda.southsumatera.R;
 import com.mediaanda.southsumatera.Fragment.WaterTowerFragment;
+import com.mediaanda.southsumatera.SmbMuseumFragment;
+import com.mediaanda.southsumatera.SongketCraftFragment;
+import com.mediaanda.southsumatera.SriwijayaKingdomFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -70,6 +83,62 @@ public class CardViewPalembangAdapter extends RecyclerView.Adapter<CardViewPalem
                     WaterTowerFragment waterTowerFragment = new WaterTowerFragment();
                     ft.replace(R.id.frame_container, waterTowerFragment, "Palembang");
                 }
+                else if(position == 4){
+                    SiguntangHillFragment siguntangHillFragment = new SiguntangHillFragment();
+                    ft.replace(R.id.frame_container, siguntangHillFragment, "Palembang");
+                }
+                else if(position == 5){
+                    KambangIwakFragment kambangIwakFragment = new KambangIwakFragment();
+                    ft.replace(R.id.frame_container, kambangIwakFragment, "Palembang");
+                }
+                else if(position == 6){
+                    KapitanVillageFragment kapitanVillageFragment = new KapitanVillageFragment();
+                    ft.replace(R.id.frame_container, kapitanVillageFragment, "Palembang");
+                }
+                else if(position == 7){
+                    AlMunawarFragment alMunawarFragment = new AlMunawarFragment();
+                    ft.replace(R.id.frame_container, alMunawarFragment, "Palembang");
+                }
+                else if(position == 8){
+                    KawahTengkurepFragment kawahTengkurepFragment = new KawahTengkurepFragment();
+                    ft.replace(R.id.frame_container, kawahTengkurepFragment, "Palembang");
+                }
+                else if(position == 9){
+                    MasjidAgungFragment masjidAgungFragment = new MasjidAgungFragment();
+                    ft.replace(R.id.frame_container, masjidAgungFragment, "Palembang");
+                }
+                else if(position == 10){
+                    MonperaFragment monperaFragment = new MonperaFragment();
+                    ft.replace(R.id.frame_container, monperaFragment, "Palembang");
+                }
+                else if(position == 11){
+                    SmbMuseumFragment smbMuseumFragment = new SmbMuseumFragment();
+                    ft.replace(R.id.frame_container, smbMuseumFragment, "Palembang");
+                }
+                else if(position == 12){
+                    BalaputeraDewaFragment balaputeraDewaFragment = new BalaputeraDewaFragment();
+                    ft.replace(R.id.frame_container, balaputeraDewaFragment, "Palembang");
+                }
+                else if(position == 13){
+                    SriwijayaKingdomFragment sriwijayaKingdomFragment = new SriwijayaKingdomFragment();
+                    ft.replace(R.id.frame_container, sriwijayaKingdomFragment, "Palembang");
+                }
+                else if(position == 14){
+                    KemaroIslandFragment kemaroIslandFragment = new KemaroIslandFragment();
+                    ft.replace(R.id.frame_container, kemaroIslandFragment, "Palembang");
+                }
+                else if(position == 15){
+                    Market16IlirFragment market16IlirFragment = new Market16IlirFragment();
+                    ft.replace(R.id.frame_container, market16IlirFragment, "Palembang");
+                }
+                else if(position == 16){
+                    SongketCraftFragment songketCraftFragment = new SongketCraftFragment();
+                    ft.replace(R.id.frame_container, songketCraftFragment, "Palembang");
+                }
+                else if(position == 17){
+
+                }
+
                 ft.addToBackStack("Palembang");
                 ft.commit();
             }
