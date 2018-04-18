@@ -1,4 +1,4 @@
-package com.mediaanda.southsumatera;
+package com.mediaanda.southsumatera.Fragment;
 
 
 import android.os.Bundle;
@@ -7,14 +7,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.mediaanda.southsumatera.R;
+
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Market16IlirFragment extends Fragment {
+public class SembilangNationalFragment extends Fragment {
 
 
-    public Market16IlirFragment() {
+    public SembilangNationalFragment() {
         // Required empty public constructor
     }
 
@@ -22,10 +24,10 @@ public class Market16IlirFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_market16_ilir, container, false);
+        View view = inflater.inflate(R.layout.fragment_sembilang_national, container, false);
 
 
-        getActivity().setTitle("16 Ilir Market");
+        getActivity().setTitle("Sembilang National Park");
         return view;
     }
 

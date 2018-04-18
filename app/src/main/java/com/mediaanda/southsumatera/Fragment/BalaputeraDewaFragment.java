@@ -1,4 +1,4 @@
-package com.mediaanda.southsumatera;
+package com.mediaanda.southsumatera.Fragment;
 
 
 import android.os.Bundle;
@@ -7,14 +7,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.mediaanda.southsumatera.R;
+
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class KemaroIslandFragment extends Fragment {
+public class BalaputeraDewaFragment extends Fragment {
 
 
-    public KemaroIslandFragment() {
+    public BalaputeraDewaFragment() {
         // Required empty public constructor
     }
 
@@ -22,10 +24,10 @@ public class KemaroIslandFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_kemaro_island, container, false);
+        View view = inflater.inflate(R.layout.fragment_balaputera_dewa, container, false);
 
 
-        getActivity().setTitle("Kemaro Island");
+        getActivity().setTitle("Balaputeradewa Museum");
         return view;
     }
 

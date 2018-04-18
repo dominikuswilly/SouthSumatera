@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Market16IlirFragment">
+    tools:context=".Fragment.Market16IlirFragment">
 
     <LinearLayout
         android:layout_width="match_parent"

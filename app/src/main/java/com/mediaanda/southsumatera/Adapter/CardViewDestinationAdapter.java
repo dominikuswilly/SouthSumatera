@@ -16,7 +16,10 @@ import android.widget.TextView;
 
 import com.mediaanda.southsumatera.CustomOnItemClickListener;
 import com.mediaanda.southsumatera.Destination;
+import com.mediaanda.southsumatera.EmpatLawangFragment;
+import com.mediaanda.southsumatera.Fragment.BanyuasinFragment;
 import com.mediaanda.southsumatera.Fragment.PalembangFragment;
+import com.mediaanda.southsumatera.Fragment.SembilangNationalFragment;
 import com.mediaanda.southsumatera.R;
 
 import java.util.ArrayList;
@@ -26,7 +29,7 @@ public class CardViewDestinationAdapter extends RecyclerView.Adapter<CardViewDes
     private List<Destination> listDestination;
     private Context context;
 
-    public CardViewDestinationAdapter(List<Destination> listDestination){
+    public CardViewDestinationAdapter(List<Destination> listDestination) {
         this.listDestination = listDestination;
     }
 
@@ -49,14 +52,22 @@ public class CardViewDestinationAdapter extends RecyclerView.Adapter<CardViewDes
             @Override
             public void onItemClicked(View view, int position) {
                 //Toast.makeText(view.getContext(), "Pilih : " + listDestination.get(position).getName(), Toast.LENGTH_SHORT).show();
-                FragmentManager manager = ((AppCompatActivity)view.getContext()).getSupportFragmentManager();
+                FragmentManager manager = ((AppCompatActivity) view.getContext()).getSupportFragmentManager();
                 FragmentTransaction ft = manager.beginTransaction();
-                if(position == 0){
+                if (position == 0) {
                     PalembangFragment palembangFragment = new PalembangFragment();
-                    ft.replace(R.id.frame_container, palembangFragment,"Destination");
-                    ft.addToBackStack("Destination");
-                    ft.commit();
+                    ft.replace(R.id.frame_container, palembangFragment, "Destination");
+
+                } else if (position == 1) {
+                    BanyuasinFragment banyuasinFragment = new BanyuasinFragment();
+                    ft.replace(R.id.frame_container, banyuasinFragment, "Destination");
+                } else if (position == 2) {
+                    EmpatLawangFragment empatLawangFragment = new EmpatLawangFragment();
+                    ft.replace(R.id.frame_container, empatLawangFragment, "Destination");
                 }
+
+                ft.addToBackStack("Destination");
+                ft.commit();
             }
         }));
     }
@@ -75,7 +86,7 @@ public class CardViewDestinationAdapter extends RecyclerView.Adapter<CardViewDes
         return listDestination.size();
     }
 
-    class CardViewViewHolder extends RecyclerView.ViewHolder{
+    class CardViewViewHolder extends RecyclerView.ViewHolder {
         CardView cv;
         ImageView imgPhoto;
         TextView tvName, tvDescription;
@@ -84,14 +95,13 @@ public class CardViewDestinationAdapter extends RecyclerView.Adapter<CardViewDes
         CardViewViewHolder(View itemView) {
             super(itemView);
             cv = (CardView) itemView.findViewById(R.id.cv_destination);
-            imgPhoto = (ImageView)itemView.findViewById(R.id.img_item_photo);
-            tvName = (TextView)itemView.findViewById(R.id.tv_item_name);
-            tvDescription = (TextView)itemView.findViewById(R.id.tv_item_description);
-            btnDetail = (Button)itemView.findViewById(R.id.btn_Detail);
+            imgPhoto = (ImageView) itemView.findViewById(R.id.img_item_photo);
+            tvName = (TextView) itemView.findViewById(R.id.tv_item_name);
+            tvDescription = (TextView) itemView.findViewById(R.id.tv_item_description);
+            btnDetail = (Button) itemView.findViewById(R.id.btn_Detail);
 
         }
     }
-
 
 
 }
