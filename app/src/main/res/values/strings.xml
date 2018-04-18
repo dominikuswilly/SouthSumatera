@@ -236,21 +236,67 @@
         The princess herself turned into stone for ignoring the Pahit Lidah.
     </string>
 
-    <string name="deskripsi_ranau_lake"></string>
-    <string name="deskripsi_mariza_island"></string>
+    <string name="deskripsi_ranau_lake">
+        Lake Ranau is located in the border district of South OKU province of South Sumatera and West Lampung Regency of Lampung Province.
+        According to legend, the lake was created from the massive earthquake and volcanic eruption of the volcano makes a big basin.
+        Then around the new lake began overgrown with a variety of plants, including plants bush by the local residents called Ranau.
+        Then the lake was named Ranau Lake.
+        The rest of the volcano is now the Mount Seminung that stands firmly in the clear water of the lake edge.
+    </string>
 
-    <string name="deskripsi_sembilang_national_park"></string>
+    <string name="deskripsi_mariza_island">
+        Mariza Island is a unique island formed from the foot of Mount Seminung jutting out from the surface of Ranau Lake and is located almost in the middle of the lake, overgrown with palm trees and can be reached approximately 15 minutes from Kotabatu Dock, approximately 30 minutes from the Pusri Dock and Banding Agung Dock Mariza Island store myth, anyone who visited and set foot on this island,
+        it is said, if they are a pair of young couple who are in love, it will be linked to their marriages and when visitors are a married couple, then their marriage will be lasting until the end of their life.
+    </string>
 
-    <string name="deskripsi_tujuh_panggung_waterfall"></string>
-    <string name="deskripsi_batu_betang_waterfall"></string>
+    <string name="deskripsi_sembilang_national_park">
+        Sembilang National Park is the representative of turf swamp forest, fresh water
+    </string>
 
-    <string name="deskripsi_teluk_gelam"></string>
-    <string name="deskripsi_hundred_pillars_house"></string>
+    <string name="deskripsi_tujuh_panggung_waterfall">
+        7 Stage Waterfall is lcoated at Tanjung Alam Village Lintang Kanan Sub-District.
+        The distance to the location is approximately 80 km from High Cliff.
+        This waterfall consists of 7 levels resemblingstage so it was named 7 Panggung or Seven Stage in English.
+    </string>
 
-    <string name="deskripsi_temam_waterfall"></string>
-    <string name="deskripsi_magic_hill"></string>
+    <string name="deskripsi_batu_betang_waterfall">
+        Located in the village of Ulak Dabuk district, Talang Padang sub-district, the distance is approximately 20 km from High Cliff, Empat Lawang regency.
+        It was said that the betiang stone at the left and the right sides of the waterfall was one a timber for a granary that was condemned by Pahit Lidah into stone because of his intention to make the granary hindered by the surrounding community.
+    </string>
 
-    <string name="deskripsi_bedegun_waterfall"></string>
+    <string name="deskripsi_teluk_gelam">
+        Teluk Gelam has calmwaters and is suitable for jet skis and paddle sports.
+        Here visitors can try some water sports, swimming, fishing, or just walking around enjoying the scenery around the lake.
+        In the middle of the lake there is aland filled with thousandsof Gelam trees (Melaleuka Leucandendron).
+        Aside from being a sports facility, the location is another alternative for family entertainment as well as for organizing various events and this place will serve as a scout campus of South Sumatra.
+    </string>
 
-    <string name="deskripsi_bumi_ayu_temple"></string>
+    <string name="deskripsi_hundred_pillars_house">
+        The occupants of the house is a descendant of the 7th of Prince Rejed.
+        The house was builtat the request of the Princess\' parents, Prince Ismail from Kayuagung Tribe, as a condition for the son of Prince Rejed to propose to the princess.
+        The house must be built of ironwood (onglen) and the pillars should amount to one hundred wooden pillars with wooden allied onglen and ornaments that everything should be carved 3-dimensional signage in the form of paintings and carvings.
+        And finally the house serve as center of government power Bengkulah citizens.
+    </string>
+
+    <string name="deskripsi_temam_waterfall">
+        Temam waterfall have a height of 12 meters and a width of 25 meters located in Temam river flow, precisely in the Air Temam Village, District of South Lubuklinggau I, Lubuklinggau.
+        The location of this waterfall is surrounded by natural rocks and green trees, and is equipped with a 100-meter bridge that makes you want to linger to enjoy the beauty of the bridge.
+    </string>
+
+    <string name="deskripsi_magic_hill">
+        Magic hill is the latest attraction in South Sumatra, which is located in South Sumatra.
+        This hill is called the Magic Hill because every morning, this hill is not visible due to the fog that surrounds the hill like a magic.
+    </string>
+
+    <string name="deskripsi_bedegun_waterfall">
+        Bedegung Waterfall or Calm Waterfall is the highest waterfall in South Sumatra. Comes from the springs in the gap of Bukit Barisan, this waterfall feels so refreshing.
+        The waterfall was later used as a location for rafting sports events in national and international level.
+    </string>
+
+    <string name="deskripsi_bumi_ayu_temple">
+        Bumiayu Temple is one of the relics of the Hindus. Located in a coastal Lematang River, Bumiayu Village, Tanah Abang Sub-District, Arab Penukal District, Pematang Ilir.
+        The temple is the only temple complex in South Sumatra. Until now, less than 9 temples have been found in this area, and 4 temples have been restored.
+        This maintainance has been done since 1990 until now.
+        This temple complex has an area of 75.56 ha.
+    </string>
 </resources>
