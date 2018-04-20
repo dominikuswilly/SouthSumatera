@@ -301,4 +301,9 @@
         This maintainance has been done since 1990 until now.
         This temple complex has an area of 75.56 ha.
     </string>
+
+
+    <string name="facebook_app_id">1691040570962158</string>
+    <string name="fb_login_protocol_scheme">fb1691040570962158</string>
+
 </resources>
