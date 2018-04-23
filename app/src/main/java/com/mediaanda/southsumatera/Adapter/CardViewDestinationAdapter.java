@@ -20,6 +20,19 @@ import com.mediaanda.southsumatera.EmpatLawangFragment;
 import com.mediaanda.southsumatera.Fragment.BanyuasinFragment;
 import com.mediaanda.southsumatera.Fragment.PalembangFragment;
 import com.mediaanda.southsumatera.Fragment.SembilangNationalFragment;
+import com.mediaanda.southsumatera.LahatFragment;
+import com.mediaanda.southsumatera.LubuklinggauFragment;
+import com.mediaanda.southsumatera.MuaraEnimFragment;
+import com.mediaanda.southsumatera.MurataraFragment;
+import com.mediaanda.southsumatera.MusibanyuasinFragment;
+import com.mediaanda.southsumatera.MusirawasFragment;
+import com.mediaanda.southsumatera.OkiFragment;
+import com.mediaanda.southsumatera.OkuFragment;
+import com.mediaanda.southsumatera.OkusFragment;
+import com.mediaanda.southsumatera.OkutFragment;
+import com.mediaanda.southsumatera.PagaralamFragment;
+import com.mediaanda.southsumatera.PaliFragment;
+import com.mediaanda.southsumatera.PrabumulihFragment;
 import com.mediaanda.southsumatera.R;
 
 import java.util.ArrayList;
@@ -64,6 +77,45 @@ public class CardViewDestinationAdapter extends RecyclerView.Adapter<CardViewDes
                 } else if (position == 2) {
                     EmpatLawangFragment empatLawangFragment = new EmpatLawangFragment();
                     ft.replace(R.id.frame_container, empatLawangFragment, "Destination");
+                } else if (position == 3){
+                    LahatFragment lahatFragment = new LahatFragment();
+                    ft.replace(R.id.frame_container, lahatFragment, "Destination");
+                } else if (position == 4){
+                    LubuklinggauFragment lubuklinggauFragment = new LubuklinggauFragment();
+                    ft.replace(R.id.frame_container, lubuklinggauFragment, "Destination");
+                } else if (position == 5){
+                    MuaraEnimFragment muaraEnimFragment = new MuaraEnimFragment();
+                    ft.replace(R.id.frame_container, muaraEnimFragment, "Destination");
+                } else if (position == 6){
+                    MusibanyuasinFragment musibanyuasinFragment = new MusibanyuasinFragment();
+                    ft.replace(R.id.frame_container, musibanyuasinFragment, "Destination");
+                } else if (position == 7){
+                    MusirawasFragment musirawasFragment = new MusirawasFragment();
+                    ft.replace(R.id.frame_container, musirawasFragment, "Destination");
+                } else if (position == 8){
+                    MurataraFragment murataraFragment = new MurataraFragment();
+                    ft.replace(R.id.frame_container, murataraFragment, "Destination");
+                } else if (position == 9){
+                    OkiFragment okiFragment = new OkiFragment();
+                    ft.replace(R.id.frame_container, okiFragment, "Destination");
+                } else if (position == 10){
+                    OkuFragment okuFragment = new OkuFragment();
+                    ft.replace(R.id.frame_container, okuFragment, "Destination");
+                } else if (position == 11){
+                    OkusFragment okusFragment = new OkusFragment();
+                    ft.replace(R.id.frame_container, okusFragment, "Destination");
+                } else if (position == 12){
+                    OkutFragment okutFragment = new OkutFragment();
+                    ft.replace(R.id.frame_container, okutFragment, "Destination");
+                } else if (position == 13){
+                    PagaralamFragment pagaralamFragment = new PagaralamFragment();
+                    ft.replace(R.id.frame_container, pagaralamFragment, "Destination");
+                } else if (position == 14){
+                    PaliFragment paliFragment = new PaliFragment();
+                    ft.replace(R.id.frame_container, paliFragment, "Destination");
+                } else if (position == 15){
+                    PrabumulihFragment prabumulihFragment = new PrabumulihFragment();
+                    ft.replace(R.id.frame_container, prabumulihFragment, "Destination");
                 }
 
                 ft.addToBackStack("Destination");

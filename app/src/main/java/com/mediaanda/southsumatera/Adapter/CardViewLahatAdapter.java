@@ -1,7 +1,6 @@
 package com.mediaanda.southsumatera.Adapter;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -17,7 +16,6 @@ import android.widget.TextView;
 import com.mediaanda.southsumatera.CustomOnItemClickListener;
 import com.mediaanda.southsumatera.Destination;
 import com.mediaanda.southsumatera.R;
-import com.mediaanda.southsumatera.TujuhPanggungFragment;
 
 import java.util.List;
 
@@ -55,8 +53,6 @@ public class CardViewLahatAdapter extends RecyclerView.Adapter<CardViewLahatAdap
                 FragmentManager manager = ((AppCompatActivity)view.getContext()).getSupportFragmentManager();
                 FragmentTransaction ft = manager.beginTransaction();
                 if(position == 0){
-                    //SembilangNationalFragment sembilangNationalFragment = new SembilangNationalFragment();
-                    //ft.replace(R.id.frame_container, sembilangNationalFragment, "Banyuasin");
 
                 }
 

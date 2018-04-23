@@ -52,20 +52,20 @@ public class DestinationFragment extends Fragment {
         listDestination = new ArrayList<>();
         listDestination.add(new Destination("Palembang", "Keterangan Palembang", R.mipmap.ampera_bridge));
         listDestination.add(new Destination("Banyuasin", "Keterangan Banyuasin", R.mipmap.sembilang));
-        listDestination.add(new Destination("Empat Lawang", "Keterangan Empat Lawang", R.drawable.logo_south_sumatera));
-        listDestination.add(new Destination("Lahat", "Keterangan Lahat", R.mipmap.ic_menu_airport));
-        listDestination.add(new Destination("Lubuk Linggau", "Keterangan Lubuk Linggau", R.mipmap.ic_menu_airport));
-        listDestination.add(new Destination("Muara Enim", "Keterangan Muara Enim", R.mipmap.ic_menu_airport));
-        listDestination.add(new Destination("Musi Banyuasin", "Keterangan Musi Banyuasin", R.mipmap.ic_menu_airport));
-        listDestination.add(new Destination("Musi Rawas", "Keterangan Musi Rawas", R.mipmap.ic_menu_airport));
-        listDestination.add(new Destination("Musi Rawas Utara", "Keterangan Musi Rawas Utara", R.mipmap.ic_menu_airport));
-        listDestination.add(new Destination("Ogan Komering Ilir", "Keterangan Ogan Komering Ilir", R.mipmap.ic_menu_airport));
-        listDestination.add(new Destination("Ogan Komering Ulu", "Keterangan Ogan Komering Ulu", R.mipmap.ic_menu_airport));
-        listDestination.add(new Destination("OKU Selatan", "Keterangan OKU Selatan", R.mipmap.ic_menu_airport));
-        listDestination.add(new Destination("OKU Timur", "Keterangan OKU Timur", R.mipmap.ic_menu_airport));
-        listDestination.add(new Destination("Pagaralam", "Keterangan Pagar Alam", R.mipmap.ic_menu_airport));
-        listDestination.add(new Destination("Pali", "Keterangan Pali", R.mipmap.ic_menu_airport));
-        listDestination.add(new Destination("Prabumulih", "Keterangan Prabumulih", R.mipmap.ic_menu_airport));
+        listDestination.add(new Destination("Empat Lawang", "Keterangan Empat Lawang", R.mipmap.tujuh_panggung));
+        listDestination.add(new Destination("Lahat", "Keterangan Lahat", R.mipmap.bukit_selero));
+        listDestination.add(new Destination("Lubuk Linggau", "Keterangan Lubuk Linggau", R.mipmap.temam_waterfall));
+        listDestination.add(new Destination("Muara Enim", "Keterangan Muara Enim", R.mipmap.bedegung_waterfall));
+        listDestination.add(new Destination("Musi Banyuasin", "Keterangan Musi Banyuasin", R.mipmap.ulak_lia));
+        listDestination.add(new Destination("Musi Rawas", "Keterangan Musi Rawas", R.mipmap.aur_lake));
+        listDestination.add(new Destination("Musi Rawas Utara", "Keterangan Musi Rawas Utara", R.drawable.logo_south_sumatera));
+        listDestination.add(new Destination("Ogan Komering Ilir", "Keterangan Ogan Komering Ilir", R.drawable.logo_south_sumatera));
+        listDestination.add(new Destination("Ogan Komering Ulu", "Keterangan Ogan Komering Ulu", R.drawable.logo_south_sumatera));
+        listDestination.add(new Destination("OKU Selatan", "Keterangan OKU Selatan", R.drawable.logo_south_sumatera));
+        listDestination.add(new Destination("OKU Timur", "Keterangan OKU Timur", R.drawable.logo_south_sumatera));
+        listDestination.add(new Destination("Pagaralam", "Keterangan Pagar Alam", R.drawable.logo_south_sumatera));
+        listDestination.add(new Destination("Pali", "Keterangan Pali", R.drawable.logo_south_sumatera));
+        listDestination.add(new Destination("Prabumulih", "Keterangan Prabumulih", R.drawable.logo_south_sumatera));
 
     }
 
