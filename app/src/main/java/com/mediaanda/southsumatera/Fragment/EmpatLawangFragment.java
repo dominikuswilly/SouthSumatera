@@ -1,4 +1,4 @@
-package com.mediaanda.southsumatera;
+package com.mediaanda.southsumatera.Fragment;
 
 
 import android.os.Bundle;
@@ -9,7 +9,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.mediaanda.southsumatera.Adapter.CardViewMurataraAdapter;
+import com.mediaanda.southsumatera.Adapter.CardViewBanyuasinAdapter;
+import com.mediaanda.southsumatera.Adapter.CardViewEmpatLawangAdapter;
+import com.mediaanda.southsumatera.Destination;
+import com.mediaanda.southsumatera.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,14 +21,15 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class MurataraFragment extends Fragment {
+public class EmpatLawangFragment extends Fragment {
+
+
     private List<Destination> listDestination;
     private RecyclerView rvDestination;
     private RecyclerView.LayoutManager layoutManager;
-    private CardViewMurataraAdapter mCardDestinationAdapter;
+    private CardViewEmpatLawangAdapter mCardDestinationAdapter;
 
-
-    public MurataraFragment() {
+    public EmpatLawangFragment() {
         // Required empty public constructor
     }
 
@@ -42,19 +46,20 @@ public class MurataraFragment extends Fragment {
         initializeData();
         initializeAdapter();
 
-        getActivity().setTitle("Musi Rawas Utara");
+        getActivity().setTitle("Empat Lawang");
         return view;
     }
 
     private void initializeData(){
         listDestination = new ArrayList<>();
-        //listDestination.add(new Destination("Sembilang National Park", getResources().getString(R.string.deskripsi_sembilang_national_park), R.mipmap.sembilang));
-
+        listDestination.add(new Destination("Tujuh Panggung Waterfall", getResources().getString(R.string.deskripsi_tujuh_panggung_waterfall), R.mipmap.tujuh_panggung));
+        listDestination.add(new Destination("Batu Betang Waterfall", getResources().getString(R.string.deskripsi_batu_betang_waterfall), R.drawable.logo_south_sumatera));
+        listDestination.add(new Destination("Lubuk Tudung", getResources().getString(R.string.deskripsi_lubuk_tudung), R.mipmap.lubuk_tudung ));
+        listDestination.add(new Destination("Rafting Empat Lawang", getResources().getString(R.string.deskripsi_rafting), R.mipmap.rafting));
     }
 
     private void initializeAdapter(){
-        CardViewMurataraAdapter adapter = new CardViewMurataraAdapter(listDestination);
+        CardViewEmpatLawangAdapter adapter = new CardViewEmpatLawangAdapter(listDestination);
         rvDestination.setAdapter(adapter);
     }
-
 }

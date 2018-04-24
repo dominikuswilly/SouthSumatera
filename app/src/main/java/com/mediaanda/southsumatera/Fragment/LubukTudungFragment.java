@@ -13,10 +13,10 @@ import com.mediaanda.southsumatera.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class BalaputeraDewaFragment extends Fragment {
+public class LubukTudungFragment extends Fragment {
 
 
-    public BalaputeraDewaFragment() {
+    public LubukTudungFragment() {
         // Required empty public constructor
     }
 
@@ -24,10 +24,10 @@ public class BalaputeraDewaFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_batu_betang, container, false);
+        View view = inflater.inflate(R.layout.fragment_lubuk_tudung, container, false);
 
 
-        getActivity().setTitle("Batu Betang Waterfall");
+        getActivity().setTitle("Lubuk Tudung");
         return view;
     }
 

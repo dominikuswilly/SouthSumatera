@@ -11,10 +11,10 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class OkutFragment extends Fragment {
+public class BedegungWaterfallFragment extends Fragment {
 
 
-    public OkutFragment() {
+    public BedegungWaterfallFragment() {
         // Required empty public constructor
     }
 
@@ -22,8 +22,11 @@ public class OkutFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_okut, container, false);
+        View view = inflater.inflate(R.layout.fragment_bedegung_waterfall, container, false);
+
+
+        getActivity().setTitle("Bedegung Waterfall");
+        return view;
     }
 
 }

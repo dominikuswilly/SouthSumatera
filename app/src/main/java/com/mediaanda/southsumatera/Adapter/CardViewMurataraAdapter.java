@@ -65,7 +65,7 @@ public class CardViewMurataraAdapter extends RecyclerView.Adapter<CardViewMurata
 
     @Override
     public int getItemCount() {
-        return 0;
+        return listDestination.size();
     }
 
     class CardViewViewHolder extends RecyclerView.ViewHolder{

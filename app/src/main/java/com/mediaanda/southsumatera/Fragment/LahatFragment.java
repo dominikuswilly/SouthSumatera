@@ -1,4 +1,4 @@
-package com.mediaanda.southsumatera;
+package com.mediaanda.southsumatera.Fragment;
 
 
 import android.os.Bundle;
@@ -9,8 +9,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.mediaanda.southsumatera.Adapter.CardViewBanyuasinAdapter;
-import com.mediaanda.southsumatera.Adapter.CardViewEmpatLawangAdapter;
+import com.mediaanda.southsumatera.Adapter.CardViewLahatAdapter;
+import com.mediaanda.southsumatera.Destination;
+import com.mediaanda.southsumatera.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,15 +20,15 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class EmpatLawangFragment extends Fragment {
-
+public class LahatFragment extends Fragment {
 
     private List<Destination> listDestination;
     private RecyclerView rvDestination;
     private RecyclerView.LayoutManager layoutManager;
-    private CardViewEmpatLawangAdapter mCardDestinationAdapter;
+    private CardViewLahatAdapter mCardBanyuasinAdapter;
 
-    public EmpatLawangFragment() {
+
+    public LahatFragment() {
         // Required empty public constructor
     }
 
@@ -44,18 +45,22 @@ public class EmpatLawangFragment extends Fragment {
         initializeData();
         initializeAdapter();
 
-        getActivity().setTitle("Empat Lawang");
+        getActivity().setTitle("Lahat");
         return view;
     }
 
     private void initializeData(){
         listDestination = new ArrayList<>();
-        listDestination.add(new Destination("Tujuh Panggung Waterfall", getResources().getString(R.string.deskripsi_tujuh_panggung_waterfall), R.mipmap.tujuh_panggung));
-        listDestination.add(new Destination("Batu Betang Waterfall", getResources().getString(R.string.deskripsi_batu_betang_waterfall), R.drawable.logo_south_sumatera));
+        listDestination.add(new Destination("Serelo Hill", getResources().getString(R.string.deskripsi_serelo_hill), R.mipmap.bukit_selero));
+        listDestination.add(new Destination("Maung Waterfall", getResources().getString(R.string.deskripsi_maung_waterfall), R.drawable.logo_south_sumatera));
+        listDestination.add(new Destination("Bidadari Waterfall", getResources().getString(R.string.deskripsi_bidadari_waterfall), R.mipmap.bidadari_waterfall));
+        listDestination.add(new Destination("Santo Mikael Church", getResources().getString(R.string.deskripsi_santo_mikael_church), R.drawable.logo_south_sumatera));
+        listDestination.add(new Destination("Megalith Sites", getResources().getString(R.string.deskripsi_megalith_sites_lahat), R.mipmap.megalith_sites));
+
     }
 
     private void initializeAdapter(){
-        CardViewEmpatLawangAdapter adapter = new CardViewEmpatLawangAdapter(listDestination);
+        CardViewLahatAdapter adapter = new CardViewLahatAdapter(listDestination);
         rvDestination.setAdapter(adapter);
     }
 }

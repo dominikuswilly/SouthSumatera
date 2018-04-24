@@ -1,4 +1,4 @@
-package com.mediaanda.southsumatera;
+package com.mediaanda.southsumatera.Fragment;
 
 
 import android.os.Bundle;
@@ -9,7 +9,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.mediaanda.southsumatera.Adapter.CardViewLubukLinggauAdapter;
+import com.mediaanda.southsumatera.Adapter.CardViewPaliAdapter;
+import com.mediaanda.southsumatera.Destination;
+import com.mediaanda.southsumatera.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,13 +20,15 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class LubuklinggauFragment extends Fragment {
+public class PaliFragment extends Fragment {
+
     private List<Destination> listDestination;
     private RecyclerView rvDestination;
     private RecyclerView.LayoutManager layoutManager;
-    private CardViewLubukLinggauAdapter mCardDestinationAdapter;
+    private CardViewPaliAdapter mCardDestinationAdapter;
 
-    public LubuklinggauFragment() {
+
+    public PaliFragment() {
         // Required empty public constructor
     }
 
@@ -41,18 +45,18 @@ public class LubuklinggauFragment extends Fragment {
         initializeData();
         initializeAdapter();
 
-        getActivity().setTitle("Lubuklinggau");
+        getActivity().setTitle("Pali");
         return view;
     }
 
     private void initializeData(){
         listDestination = new ArrayList<>();
-        listDestination.add(new Destination("Temam Waterfall", getResources().getString(R.string.deskripsi_temam_waterfall), R.mipmap.temam_waterfall));
-        listDestination.add(new Destination("Magic Hill", getResources().getString(R.string.deskripsi_magic_hill), R.mipmap.bukit_sulap));
+        listDestination.add(new Destination("Bumi Ayu Temple", getResources().getString(R.string.deskripsi_bumi_ayu_temple), R.drawable.logo_south_sumatera));
+
     }
 
     private void initializeAdapter(){
-        CardViewLubukLinggauAdapter adapter = new CardViewLubukLinggauAdapter(listDestination);
+        CardViewPaliAdapter adapter = new CardViewPaliAdapter(listDestination);
         rvDestination.setAdapter(adapter);
     }
 }

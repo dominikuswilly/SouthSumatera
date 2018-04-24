@@ -1,7 +1,6 @@
 package com.mediaanda.southsumatera.Adapter;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -55,6 +54,16 @@ public class CardViewLubukLinggauAdapter extends RecyclerView.Adapter<CardViewLu
                 if(position == 0){
                     //SembilangNationalFragment sembilangNationalFragment = new SembilangNationalFragment();
                     //ft.replace(R.id.frame_container, sembilangNationalFragment, "Banyuasin");
+                    TemamWaterfallFragment temamWaterfallFragment = new TemamWaterfallFragment();
+                    ft.replace(R.id.frame_container, temamWaterfallFragment, "Lubuklinggau");
+                }
+                else if (position == 1){
+                    MagicHillFragment magicHillFragment = new MagicHillFragment();
+                    ft.replace(R.id.frame_container, magicHillFragment, "Lubuklinggau");
+                }
+                else if(position == 2){
+                    WatervangFragment watervangFragment = new WatervangFragment();
+                    ft.replace(R.id.frame_container, watervangFragment, "Lubuklinggau");
                 }
 
                 ft.addToBackStack("Lubuklinggau");

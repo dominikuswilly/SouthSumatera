@@ -14,10 +14,13 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.mediaanda.southsumatera.Fragment.BatuBetangFragment;
 import com.mediaanda.southsumatera.CustomOnItemClickListener;
 import com.mediaanda.southsumatera.Destination;
+import com.mediaanda.southsumatera.Fragment.LubukTudungFragment;
 import com.mediaanda.southsumatera.R;
 import com.mediaanda.southsumatera.Fragment.TujuhPanggungFragment;
+import com.mediaanda.southsumatera.Fragment.RaftingEmpatLawangFragment;
 
 import java.util.List;
 
@@ -37,7 +40,6 @@ public class CardViewEmpatLawangAdapter extends RecyclerView.Adapter<CardViewEmp
     @Override
     public CardViewViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_cardview_destination, parent, false);
-        //CardViewBanyuasinAdapter.CardViewViewHolder cvh = new CardViewBanyuasinAdapter.CardViewViewHolder(view);
 
         CardViewEmpatLawangAdapter.CardViewViewHolder cvh = new CardViewEmpatLawangAdapter.CardViewViewHolder(view);
         return cvh;
@@ -60,6 +62,15 @@ public class CardViewEmpatLawangAdapter extends RecyclerView.Adapter<CardViewEmp
                     //ft.replace(R.id.frame_container, sembilangNationalFragment, "Banyuasin");
                     TujuhPanggungFragment tujuhPanggungFragment = new TujuhPanggungFragment();
                     ft.replace(R.id.frame_container, tujuhPanggungFragment, "Empatlawang");
+                } else if(position == 1){
+                    BatuBetangFragment batuBetangFragment = new BatuBetangFragment();
+                    ft.replace(R.id.frame_container, batuBetangFragment, "Empatlawang");
+                } else if(position == 2){
+                    LubukTudungFragment lubukTudungFragment = new LubukTudungFragment();
+                    ft.replace(R.id.frame_container, lubukTudungFragment, "Empatlawang");
+                } else if(position == 3){
+                    RaftingEmpatLawangFragment raftingEmpatLawangFragment = new RaftingEmpatLawangFragment();
+                    ft.replace(R.id.frame_container, raftingEmpatLawangFragment, "Empatlawang");
                 }
 
                 ft.addToBackStack("Empatlawang");

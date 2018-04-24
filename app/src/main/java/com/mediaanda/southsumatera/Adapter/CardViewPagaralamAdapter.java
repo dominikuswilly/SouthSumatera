@@ -2,14 +2,19 @@ package com.mediaanda.southsumatera.Adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.mediaanda.southsumatera.CustomOnItemClickListener;
 import com.mediaanda.southsumatera.Destination;
 import com.mediaanda.southsumatera.R;
 
@@ -29,17 +34,39 @@ public class CardViewPagaralamAdapter extends RecyclerView.Adapter<CardViewPagar
 
     @Override
     public CardViewViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return null;
+
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_cardview_destination, parent, false);
+        CardViewPagaralamAdapter.CardViewViewHolder cvh = new CardViewPagaralamAdapter.CardViewViewHolder(view);
+
+        return cvh;
     }
 
     @Override
     public void onBindViewHolder(@NonNull CardViewViewHolder holder, int position) {
+        holder.tvName.setText(listDestination.get(position).getName());
+        holder.tvDescription.setText(listDestination.get(position).getDescription());
 
+        holder.imgPhoto.setImageResource(listDestination.get(position).getPhotoId());
+
+        holder.btnDetail.setOnClickListener(new CustomOnItemClickListener(position, new CustomOnItemClickListener.OnItemClickCallback() {
+            @Override
+            public void onItemClicked(View view, int position) {
+                FragmentManager manager = ((AppCompatActivity)view.getContext()).getSupportFragmentManager();
+                FragmentTransaction ft = manager.beginTransaction();
+                if(position == 0){
+//                    SembilangNationalFragment sembilangNationalFragment = new SembilangNationalFragment();
+//                    ft.replace(R.id.frame_container, sembilangNationalFragment, "Banyuasin");
+                }
+
+                //ft.addToBackStack("oku");
+                ft.commit();
+            }
+        }));
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return listDestination.size();
     }
 
     class CardViewViewHolder extends RecyclerView.ViewHolder{

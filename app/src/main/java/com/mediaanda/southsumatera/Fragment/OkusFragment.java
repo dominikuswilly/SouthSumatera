@@ -1,4 +1,4 @@
-package com.mediaanda.southsumatera;
+package com.mediaanda.southsumatera.Fragment;
 
 
 import android.os.Bundle;
@@ -9,7 +9,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.mediaanda.southsumatera.Adapter.CardViewMusiBanyuasinAdapter;
+import com.mediaanda.southsumatera.Adapter.CardViewOkuSelatanAdapter;
+import com.mediaanda.southsumatera.Destination;
+import com.mediaanda.southsumatera.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,13 +20,13 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class MusibanyuasinFragment extends Fragment {
+public class OkusFragment extends Fragment {
     private List<Destination> listDestination;
     private RecyclerView rvDestination;
     private RecyclerView.LayoutManager layoutManager;
-    private CardViewMusiBanyuasinAdapter mCardDestinationAdapter;
+    private CardViewOkuSelatanAdapter mCardDestinationAdapter;
 
-    public MusibanyuasinFragment() {
+    public OkusFragment() {
         // Required empty public constructor
     }
 
@@ -41,21 +43,19 @@ public class MusibanyuasinFragment extends Fragment {
         initializeData();
         initializeAdapter();
 
-        getActivity().setTitle(" Musi Banyuasin");
+        getActivity().setTitle("Oku Selatan");
         return view;
     }
 
     private void initializeData(){
         listDestination = new ArrayList<>();
-        listDestination.add(new Destination("Konger Lake", getResources().getString(R.string.deskripsi_konger_lake), R.drawable.logo_south_sumatera));
-        listDestination.add(new Destination("Sekayu Waterfront Park", getResources().getString(R.string.deskripsi_sekayu_waterfront_park), R.drawable.logo_south_sumatera));
-        listDestination.add(new Destination("Ulak Lia Lake", getResources().getString(R.string.deskripsi_ulak_lia_lake), R.drawable.logo_south_sumatera));
-        listDestination.add(new Destination("Rakit House", getResources().getString(R.string.deskripsi_rakit_house), R.drawable.logo_south_sumatera));
+        listDestination.add(new Destination("Ranau Lake", getResources().getString(R.string.deskripsi_ranau_lake), R.drawable.logo_south_sumatera));
+        listDestination.add(new Destination("Mariza Island", getResources().getString(R.string.deskripsi_mariza_island), R.drawable.logo_south_sumatera));
 
     }
 
     private void initializeAdapter(){
-        CardViewMusiBanyuasinAdapter adapter = new CardViewMusiBanyuasinAdapter(listDestination);
+        CardViewOkuSelatanAdapter adapter = new CardViewOkuSelatanAdapter(listDestination);
         rvDestination.setAdapter(adapter);
     }
 }

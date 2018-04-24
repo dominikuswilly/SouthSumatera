@@ -1,4 +1,4 @@
-package com.mediaanda.southsumatera;
+package com.mediaanda.southsumatera.Fragment;
 
 
 import android.os.Bundle;
@@ -9,7 +9,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.mediaanda.southsumatera.Adapter.CardViewLahatAdapter;
+import com.mediaanda.southsumatera.Adapter.CardViewPrabumulihAdapter;
+import com.mediaanda.southsumatera.Destination;
+import com.mediaanda.southsumatera.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,15 +20,14 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class LahatFragment extends Fragment {
+public class PrabumulihFragment extends Fragment {
 
     private List<Destination> listDestination;
     private RecyclerView rvDestination;
     private RecyclerView.LayoutManager layoutManager;
-    private CardViewLahatAdapter mCardBanyuasinAdapter;
+    private CardViewPrabumulihAdapter mCardDestinationAdapter;
 
-
-    public LahatFragment() {
+    public PrabumulihFragment() {
         // Required empty public constructor
     }
 
@@ -43,22 +44,18 @@ public class LahatFragment extends Fragment {
         initializeData();
         initializeAdapter();
 
-        getActivity().setTitle("Lahat");
+        getActivity().setTitle("Prabumulih");
         return view;
     }
 
     private void initializeData(){
         listDestination = new ArrayList<>();
-        listDestination.add(new Destination("Serelo Hill", getResources().getString(R.string.deskripsi_serelo_hill), R.mipmap.bukit_selero));
-        listDestination.add(new Destination("Maung Waterfall", getResources().getString(R.string.deskripsi_maung_waterfall), R.drawable.logo_south_sumatera));
-        listDestination.add(new Destination("Bidadari Waterfall", getResources().getString(R.string.deskripsi_bidadari_waterfall), R.mipmap.bidadari_waterfall));
-        listDestination.add(new Destination("Santo Mikael Church", getResources().getString(R.string.deskripsi_santo_mikael_church), R.drawable.logo_south_sumatera));
-        listDestination.add(new Destination("Megalith Sites", getResources().getString(R.string.deskripsi_megalith_sites_lahat), R.mipmap.megalith_sites));
+        listDestination.add(new Destination("Tourism Kampoeng", "No Description", R.drawable.logo_south_sumatera));
 
     }
 
     private void initializeAdapter(){
-        CardViewLahatAdapter adapter = new CardViewLahatAdapter(listDestination);
+        CardViewPrabumulihAdapter adapter = new CardViewPrabumulihAdapter(listDestination);
         rvDestination.setAdapter(adapter);
     }
 }

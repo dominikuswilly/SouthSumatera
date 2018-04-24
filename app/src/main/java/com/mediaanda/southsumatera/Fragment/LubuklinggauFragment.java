@@ -1,4 +1,4 @@
-package com.mediaanda.southsumatera;
+package com.mediaanda.southsumatera.Fragment;
 
 
 import android.os.Bundle;
@@ -9,7 +9,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.mediaanda.southsumatera.Adapter.CardViewMusiRawasAdapter;
+import com.mediaanda.southsumatera.Adapter.CardViewLubukLinggauAdapter;
+import com.mediaanda.southsumatera.Destination;
+import com.mediaanda.southsumatera.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,13 +20,13 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class MusirawasFragment extends Fragment {
+public class LubuklinggauFragment extends Fragment {
     private List<Destination> listDestination;
     private RecyclerView rvDestination;
     private RecyclerView.LayoutManager layoutManager;
-    private CardViewMusiRawasAdapter mCardDestinationAdapter;
+    private CardViewLubukLinggauAdapter mCardDestinationAdapter;
 
-    public MusirawasFragment() {
+    public LubuklinggauFragment() {
         // Required empty public constructor
     }
 
@@ -41,20 +43,19 @@ public class MusirawasFragment extends Fragment {
         initializeData();
         initializeAdapter();
 
-        getActivity().setTitle("Musi Rawas");
+        getActivity().setTitle("Lubuklinggau");
         return view;
     }
 
     private void initializeData(){
         listDestination = new ArrayList<>();
-        listDestination.add(new Destination("Gegar Lake", getResources().getString(R.string.deskripsi_gegas_lake), R.drawable.logo_south_sumatera));
-        listDestination.add(new Destination("Aur Lake", getResources().getString(R.string.deskripsi_aur_lake), R.mipmap.aur_lake));
-
+        listDestination.add(new Destination("Temam Waterfall", getResources().getString(R.string.deskripsi_temam_waterfall), R.mipmap.temam_waterfall));
+        listDestination.add(new Destination("Magic Hill", getResources().getString(R.string.deskripsi_magic_hill), R.mipmap.bukit_sulap));
+        listDestination.add(new Destination("Water Vang", getResources().getString(R.string.deskripsi_water_vang), R.mipmap.watervang));
     }
 
     private void initializeAdapter(){
-        CardViewMusiRawasAdapter adapter = new CardViewMusiRawasAdapter(listDestination);
+        CardViewLubukLinggauAdapter adapter = new CardViewLubukLinggauAdapter(listDestination);
         rvDestination.setAdapter(adapter);
     }
-
 }

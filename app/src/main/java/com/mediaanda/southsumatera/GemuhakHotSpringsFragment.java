@@ -11,10 +11,10 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class PaliFragment extends Fragment {
+public class GemuhakHotSpringsFragment extends Fragment {
 
 
-    public PaliFragment() {
+    public GemuhakHotSpringsFragment() {
         // Required empty public constructor
     }
 
@@ -23,7 +23,7 @@ public class PaliFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_pali, container, false);
+        return inflater.inflate(R.layout.fragment_gemuhak_hot_springs, container, false);
     }
 
 }

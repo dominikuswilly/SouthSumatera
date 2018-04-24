@@ -1,4 +1,4 @@
-package com.mediaanda.southsumatera;
+package com.mediaanda.southsumatera.Fragment;
 
 
 import android.os.Bundle;
@@ -9,7 +9,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.mediaanda.southsumatera.Adapter.CardViewOkuSelatanAdapter;
+import com.mediaanda.southsumatera.Adapter.CardViewMusiRawasAdapter;
+import com.mediaanda.southsumatera.Destination;
+import com.mediaanda.southsumatera.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,13 +20,13 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class OkusFragment extends Fragment {
+public class MusirawasFragment extends Fragment {
     private List<Destination> listDestination;
     private RecyclerView rvDestination;
     private RecyclerView.LayoutManager layoutManager;
-    private CardViewOkuSelatanAdapter mCardDestinationAdapter;
+    private CardViewMusiRawasAdapter mCardDestinationAdapter;
 
-    public OkusFragment() {
+    public MusirawasFragment() {
         // Required empty public constructor
     }
 
@@ -41,18 +43,20 @@ public class OkusFragment extends Fragment {
         initializeData();
         initializeAdapter();
 
-        getActivity().setTitle("Oku Selatan");
+        getActivity().setTitle("Musi Rawas");
         return view;
     }
 
     private void initializeData(){
         listDestination = new ArrayList<>();
-        //listDestination.add(new Destination("Sembilang National Park", getResources().getString(R.string.deskripsi_sembilang_national_park), R.mipmap.sembilang));
+        listDestination.add(new Destination("Gegar Lake", getResources().getString(R.string.deskripsi_gegas_lake), R.drawable.logo_south_sumatera));
+        listDestination.add(new Destination("Aur Lake", getResources().getString(R.string.deskripsi_aur_lake), R.mipmap.aur_lake));
 
     }
 
     private void initializeAdapter(){
-        CardViewOkuSelatanAdapter adapter = new CardViewOkuSelatanAdapter(listDestination);
+        CardViewMusiRawasAdapter adapter = new CardViewMusiRawasAdapter(listDestination);
         rvDestination.setAdapter(adapter);
     }
+
 }

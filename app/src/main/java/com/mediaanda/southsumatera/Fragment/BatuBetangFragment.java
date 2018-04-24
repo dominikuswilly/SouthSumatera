@@ -13,10 +13,10 @@ import com.mediaanda.southsumatera.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class BalaputeraDewaFragment extends Fragment {
+public class BatuBetangFragment extends Fragment {
 
 
-    public BalaputeraDewaFragment() {
+    public BatuBetangFragment() {
         // Required empty public constructor
     }
 
@@ -24,11 +24,8 @@ public class BalaputeraDewaFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_batu_betang, container, false);
-
-
-        getActivity().setTitle("Batu Betang Waterfall");
-        return view;
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_batu_betang, container, false);
     }
 
 }

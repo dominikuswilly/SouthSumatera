@@ -1,4 +1,4 @@
-package com.mediaanda.southsumatera;
+package com.mediaanda.southsumatera.Fragment;
 
 
 import android.os.Bundle;
@@ -9,7 +9,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.mediaanda.southsumatera.Adapter.CardViewOkiAdapter;
+import com.mediaanda.southsumatera.Adapter.CardViewMuaraEnimAdapter;
+import com.mediaanda.southsumatera.Destination;
+import com.mediaanda.southsumatera.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,14 +20,14 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class OkiFragment extends Fragment {
+public class MuaraEnimFragment extends Fragment {
 
     private List<Destination> listDestination;
     private RecyclerView rvDestination;
     private RecyclerView.LayoutManager layoutManager;
-    private CardViewOkiAdapter mCardDestinationAdapter;
+    private CardViewMuaraEnimAdapter mCardDestinationAdapter;
 
-    public OkiFragment() {
+    public MuaraEnimFragment() {
         // Required empty public constructor
     }
 
@@ -42,18 +44,20 @@ public class OkiFragment extends Fragment {
         initializeData();
         initializeAdapter();
 
-        getActivity().setTitle("Ogan Komering Ilir");
+        getActivity().setTitle("Muara Enim");
         return view;
     }
 
     private void initializeData(){
         listDestination = new ArrayList<>();
-        //listDestination.add(new Destination("Sembilang National Park", getResources().getString(R.string.deskripsi_sembilang_national_park), R.mipmap.sembilang));
-
+        listDestination.add(new Destination("Bedegung Waterfall", getResources().getString(R.string.deskripsi_bedegun_waterfall), R.mipmap.bedegung_waterfall));
+        listDestination.add(new Destination("Gemuhak Hot Springs", getResources().getString(R.string.deskripsi_gemuhak_hotsprings), R.mipmap.gemuhak));
+        listDestination.add(new Destination("Napal Carik Waterfall", getResources().getString(R.string.deskripsi_napal_carik), R.mipmap.napal_carik));
+        listDestination.add(new Destination("Bedegung Rafting", getResources().getString(R.string.deskripsi_bedegung_rafting), R.mipmap.bedegung_rafting));
     }
 
     private void initializeAdapter(){
-        CardViewOkiAdapter adapter = new CardViewOkiAdapter(listDestination);
+        CardViewMuaraEnimAdapter adapter = new CardViewMuaraEnimAdapter(listDestination);
         rvDestination.setAdapter(adapter);
     }
 }

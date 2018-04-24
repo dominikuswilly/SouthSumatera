@@ -50,22 +50,22 @@ public class DestinationFragment extends Fragment {
 
     private void initializeData(){
         listDestination = new ArrayList<>();
-        listDestination.add(new Destination("Palembang", "Keterangan Palembang", R.mipmap.ampera_bridge));
-        listDestination.add(new Destination("Banyuasin", "Keterangan Banyuasin", R.mipmap.sembilang));
-        listDestination.add(new Destination("Empat Lawang", "Keterangan Empat Lawang", R.mipmap.tujuh_panggung));
-        listDestination.add(new Destination("Lahat", "Keterangan Lahat", R.mipmap.bukit_selero));
-        listDestination.add(new Destination("Lubuk Linggau", "Keterangan Lubuk Linggau", R.mipmap.temam_waterfall));
-        listDestination.add(new Destination("Muara Enim", "Keterangan Muara Enim", R.mipmap.bedegung_waterfall));
-        listDestination.add(new Destination("Musi Banyuasin", "Keterangan Musi Banyuasin", R.mipmap.ulak_lia));
-        listDestination.add(new Destination("Musi Rawas", "Keterangan Musi Rawas", R.mipmap.aur_lake));
-        listDestination.add(new Destination("Musi Rawas Utara", "Keterangan Musi Rawas Utara", R.drawable.logo_south_sumatera));
-        listDestination.add(new Destination("Ogan Komering Ilir", "Keterangan Ogan Komering Ilir", R.drawable.logo_south_sumatera));
-        listDestination.add(new Destination("Ogan Komering Ulu", "Keterangan Ogan Komering Ulu", R.drawable.logo_south_sumatera));
-        listDestination.add(new Destination("OKU Selatan", "Keterangan OKU Selatan", R.drawable.logo_south_sumatera));
-        listDestination.add(new Destination("OKU Timur", "Keterangan OKU Timur", R.drawable.logo_south_sumatera));
-        listDestination.add(new Destination("Pagaralam", "Keterangan Pagar Alam", R.drawable.logo_south_sumatera));
-        listDestination.add(new Destination("Pali", "Keterangan Pali", R.drawable.logo_south_sumatera));
-        listDestination.add(new Destination("Prabumulih", "Keterangan Prabumulih", R.drawable.logo_south_sumatera));
+        listDestination.add(new Destination("Palembang", "No Description", R.mipmap.ampera_bridge));
+        listDestination.add(new Destination("Banyuasin", "No Description", R.mipmap.sembilang));
+        listDestination.add(new Destination("Empat Lawang", "No Description", R.mipmap.tujuh_panggung));
+        listDestination.add(new Destination("Lahat", "No Description", R.mipmap.bukit_selero));
+        listDestination.add(new Destination("Lubuk Linggau", "No Description", R.mipmap.temam_waterfall));
+        listDestination.add(new Destination("Muara Enim", "No Description", R.mipmap.bedegung_waterfall));
+        listDestination.add(new Destination("Musi Banyuasin", "No Description", R.mipmap.ulak_lia));
+        listDestination.add(new Destination("Musi Rawas", "No Description", R.mipmap.aur_lake));
+        listDestination.add(new Destination("Musi Rawas Utara", "No Description", R.drawable.logo_south_sumatera));
+        listDestination.add(new Destination("Ogan Komering Ilir", "No Description", R.drawable.logo_south_sumatera));
+        listDestination.add(new Destination("Ogan Komering Ulu", "No Description", R.drawable.logo_south_sumatera));
+        listDestination.add(new Destination("OKU Selatan", "No Description", R.drawable.logo_south_sumatera));
+        listDestination.add(new Destination("OKU Timur", "No Description", R.drawable.logo_south_sumatera));
+        listDestination.add(new Destination("Pagaralam", "No Description", R.drawable.logo_south_sumatera));
+        listDestination.add(new Destination("Pali", "No Description", R.drawable.logo_south_sumatera));
+        listDestination.add(new Destination("Prabumulih", "No Description", R.drawable.logo_south_sumatera));
 
     }
 

@@ -13,9 +13,14 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.mediaanda.southsumatera.Fragment.BidadariWaterfallFragment;
 import com.mediaanda.southsumatera.CustomOnItemClickListener;
 import com.mediaanda.southsumatera.Destination;
+import com.mediaanda.southsumatera.Fragment.MaungWaterfallFragment;
+import com.mediaanda.southsumatera.Fragment.MegalithSitesFragment;
 import com.mediaanda.southsumatera.R;
+import com.mediaanda.southsumatera.Fragment.SereloHillFragment;
+import com.mediaanda.southsumatera.Fragment.SantoMikaelChurchFragment;
 
 import java.util.List;
 
@@ -53,7 +58,21 @@ public class CardViewLahatAdapter extends RecyclerView.Adapter<CardViewLahatAdap
                 FragmentManager manager = ((AppCompatActivity)view.getContext()).getSupportFragmentManager();
                 FragmentTransaction ft = manager.beginTransaction();
                 if(position == 0){
-
+                    SereloHillFragment sereloHillFragment = new SereloHillFragment();
+                    ft.replace(R.id.frame_container, sereloHillFragment, "Lahat");
+                }
+                else if(position == 1){
+                    MaungWaterfallFragment maungWaterfallFragment = new MaungWaterfallFragment();
+                    ft.replace(R.id.frame_container, maungWaterfallFragment, "Lahat");
+                } else if(position == 2){
+                    BidadariWaterfallFragment bidadariWaterfallFragment = new BidadariWaterfallFragment();
+                    ft.replace(R.id.frame_container, bidadariWaterfallFragment, "Lahat");
+                } else if(position == 3){
+                    SantoMikaelChurchFragment santoMikaelChurchFragment = new SantoMikaelChurchFragment();
+                    ft.replace(R.id.frame_container, santoMikaelChurchFragment, "Lahat");
+                } else if(position == 4){
+                    MegalithSitesFragment megalithSitesFragment = new MegalithSitesFragment();
+                    ft.replace(R.id.frame_container, megalithSitesFragment, "Lahat");
                 }
 
                 ft.addToBackStack("Lahat");

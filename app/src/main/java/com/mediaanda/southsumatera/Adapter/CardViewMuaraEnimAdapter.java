@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.mediaanda.southsumatera.BedegungWaterfallFragment;
 import com.mediaanda.southsumatera.CustomOnItemClickListener;
 import com.mediaanda.southsumatera.Destination;
 import com.mediaanda.southsumatera.R;
@@ -57,6 +58,8 @@ public class CardViewMuaraEnimAdapter extends RecyclerView.Adapter<CardViewMuara
                 if(position == 0){
                     /*SembilangNationalFragment sembilangNationalFragment = new SembilangNationalFragment();
                     ft.replace(R.id.frame_container, sembilangNationalFragment, "Banyuasin");*/
+                    BedegungWaterfallFragment bedegungWaterfallFragment = new BedegungWaterfallFragment();
+                    ft.replace(R.id.frame_container, bedegungWaterfallFragment, "Muaraenim");
                 }
 
                 ft.addToBackStack("Muaraenim");

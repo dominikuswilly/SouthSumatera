@@ -1,4 +1,4 @@
-package com.mediaanda.southsumatera.Fragment;
+package com.mediaanda.southsumatera.Adapter;
 
 
 import android.os.Bundle;
@@ -13,10 +13,10 @@ import com.mediaanda.southsumatera.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class BalaputeraDewaFragment extends Fragment {
+public class TemamWaterfallFragment extends Fragment {
 
 
-    public BalaputeraDewaFragment() {
+    public TemamWaterfallFragment() {
         // Required empty public constructor
     }
 
@@ -24,10 +24,10 @@ public class BalaputeraDewaFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_batu_betang, container, false);
+        View view = inflater.inflate(R.layout.fragment_temam_waterfall, container, false);
 
 
-        getActivity().setTitle("Batu Betang Waterfall");
+        getActivity().setTitle("Temam Waterfall");
         return view;
     }
 
