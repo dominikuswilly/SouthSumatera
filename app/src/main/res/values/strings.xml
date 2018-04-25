@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">South Sumatera</string>
+    <string name="app_name">Wonderful South Sumatera</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
@@ -348,6 +348,36 @@
         It is about 56 km to the south of Muara Enim with about an hour or 210 km trip from Palembang city. Can be reached by all types of vehicles with good road conditions. Thus the distance from Palembang to Curup Tenang Bedegung village is only about 2 hours, or about 177 km.
 
         Bedegung Rafting spot is located near to Curup Tenang waterfall tourism. It is a newly developed tourist destination in Muara Enim, this activity has carried out in Enim river in around Curup Tenang waterfall location. The adventurers can enjoy a challenging adventure in rapids class III – IV Enim River as one of river in South Sumatra that proper for rafting both for family or expeditions.
+    </string>
+
+    <string name="deskripsi_napal_licin">
+        Napal Licin cave tourism object located at the boundary of Musi Rawas Utara (Muratara). This cave can reach by five-hour trip from Lubuklinggau or within about 145 kilometers.
+        \n
+        \n
+        If the visitor enters Napal Licin cave area, visitors will be treated with natural stone scenery. This cave has about 15 meters entrance. After passing the entrance to the cave, visitors can see the stalactites and stalagmites in floor, walls and top cave. The visitors can direct observe for the stalactites and stalagmites which formed naturally since hundreds, even thousands years ago. The visitors will pass through hallway along 1.5 kilometers. The hallway connects the four hills: Batu hill, Semambang hill, Payung hill, and Karang Nato hill. The hallway is not too large, so visitors have to stoop, even lying down, in order to pass it. It takes more than four hours to enjoy all the view in various corners of the cave.
+        \n
+        \n
+        Recently research, the Institute for Archaeology Palembang found new evidence of megalithic in Napal Licin cave such as a mound of stones and tools in stone era. Not only the temple that have been found, but the evidences of prehistoric human life were also obtained, such as stone tools. Other megalithic objects were also found like; stone cylinder that looks similar to the historic relics in Jambi. Besides, Tempayan Kubur relics in Bayung Lincir district which was in acacia garden also be evidence of civilization that has progressed before Srivijaya kingdom. That Tempayan Kubur sites has estimated since II to V century AD.
+    </string>
+
+    <string name="deskripsi_tingkip_temple">
+        Tingkip Temple is located in Simpang Subur area, Sungai Jauh village, Rawas Ulu district, Musi Rawas Utara regency of South Sumatra Province. Tingkip temple located on a plateau surrounded by Tingkip river and its creek. The temple is located 100 meters south of Tingkip river or on the left side of the river when viewed from the downstream. Meanwhile, its located from Tingkip creek is about 210 meters to west side.
+        \n
+        \n
+        Tingkip sites began to be known as archaeological sites since in the middle of March 1981, when a statue of Buddha found. Tingkip temple is a replica of Mount Meru. Meanwhile, the configuration of the rivers around Tingkip temple which surrounds the temple may be considered as replica of the ocean surrounding Mount Meru. It is an effort to create a parallel between the microcosm and the macrocosm. Tingkip temple is a massive building, without cubicle, or opened, just like other Buddhists temples.
+        \n
+        \n
+        Tingkip temple is a single building. Tingkip temple faces east and has a staircase entrance located on one side of the building only. In Tingkip temple building there is Kumbha profile that formed from two layers of bricks and underneath there is Padma profile formed from three layers of bricks. The combination of both profiles are also found in Buddhists temples. Tingkip temple might built concurrently with the renovation of Buddha statues that were placed on the temple which is about the end of the 9th century AD, until the 10th century AD.
+    </string>
+
+    <string name="deskripsi_lesung_batu">
+        Lesung Batu temple is an archaeological site located in Lesung Batu Muda village, Rawas Ulu district, Musi Rawas Utara regency of South Sumatra. The location of cultural heritage sites is located on the edge of Sumatra highway (Jalinsum) on kilometers 93, about 500 meters from the rubber plantation area which has two hectares width. This site is a cultural remains from the classical period; Hindu-Buddhist in Indonesia.
+        \n
+        \n
+        This temple is built around 10th century AD or as same as Srivijaya kingdom era. It means, although Sriwijaya embrace Buddhist, but Hindu rituals survive and exist in its territory. The artifacts that ever found in this temple are including, Yoni (place of Hinduism worship), foreign ceramic shards, very brittle brick structure. The research that have been conducted shows that around the temple were also found brick structure which may be a guardrail.
+        \n
+        \n
+        Also found the grave jars and fragments of Chinese ceramics relics of Srivijaya kingdom 10th century. Jars grave is also the cultural heritage of prehistoric Buddhists in the 10th century. In the area also found fragments of ceramics that is based on chronological originated from China in the 10th century.
     </string>
 
     <string name="facebook_app_id">1691040570962158</string>

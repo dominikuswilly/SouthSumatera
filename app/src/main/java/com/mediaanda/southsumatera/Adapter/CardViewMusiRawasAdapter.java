@@ -1,7 +1,6 @@
 package com.mediaanda.southsumatera.Adapter;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -14,8 +13,10 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.mediaanda.southsumatera.Fragment.AurLakeFragment;
 import com.mediaanda.southsumatera.CustomOnItemClickListener;
 import com.mediaanda.southsumatera.Destination;
+import com.mediaanda.southsumatera.Fragment.GegarLakeFragment;
 import com.mediaanda.southsumatera.R;
 
 import java.util.List;
@@ -55,9 +56,15 @@ public class CardViewMusiRawasAdapter extends RecyclerView.Adapter<CardViewMusiR
                 if(position == 0){
                     /*SembilangNationalFragment sembilangNationalFragment = new SembilangNationalFragment();
                     ft.replace(R.id.frame_container, sembilangNationalFragment, "Banyuasin");*/
+                    GegarLakeFragment gegarLakeFragment = new GegarLakeFragment();
+                    ft.replace(R.id.frame_container, gegarLakeFragment, "Musirawas");
+                }
+                else if(position == 1){
+                    AurLakeFragment aurLakeFragment = new AurLakeFragment();
+                    ft.replace(R.id.frame_container, aurLakeFragment, "Musirawas");
                 }
 
-                ft.addToBackStack("Musi Rawas");
+                ft.addToBackStack("MusiRawas");
                 ft.commit();
             }
         }));

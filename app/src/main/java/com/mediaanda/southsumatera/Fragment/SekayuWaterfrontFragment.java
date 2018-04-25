@@ -1,4 +1,4 @@
-package com.mediaanda.southsumatera.Adapter;
+package com.mediaanda.southsumatera.Fragment;
 
 
 import android.os.Bundle;
@@ -13,10 +13,10 @@ import com.mediaanda.southsumatera.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class MagicHillFragment extends Fragment {
+public class SekayuWaterfrontFragment extends Fragment {
 
 
-    public MagicHillFragment() {
+    public SekayuWaterfrontFragment() {
         // Required empty public constructor
     }
 
@@ -24,11 +24,10 @@ public class MagicHillFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_magic_hill, container, false);
+        View view = inflater.inflate(R.layout.fragment_sekayu_waterfront, container, false);
 
 
-        getActivity().setTitle("Magic Hill");
+        getActivity().setTitle("Sekayu Waterfront Park");
         return view;
     }
 

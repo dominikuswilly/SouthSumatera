@@ -1,4 +1,4 @@
-package com.mediaanda.southsumatera.Adapter;
+package com.mediaanda.southsumatera;
 
 
 import android.os.Bundle;
@@ -7,16 +7,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.mediaanda.southsumatera.R;
-
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class MagicHillFragment extends Fragment {
+public class KayuagungFragment extends Fragment {
 
 
-    public MagicHillFragment() {
+    public KayuagungFragment() {
         // Required empty public constructor
     }
 
@@ -25,11 +23,7 @@ public class MagicHillFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_magic_hill, container, false);
-
-
-        getActivity().setTitle("Magic Hill");
-        return view;
+        return inflater.inflate(R.layout.fragment_kayuagung, container, false);
     }
 
 }

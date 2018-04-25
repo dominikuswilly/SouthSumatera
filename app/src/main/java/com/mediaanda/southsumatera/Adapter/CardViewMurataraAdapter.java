@@ -16,7 +16,10 @@ import android.widget.TextView;
 
 import com.mediaanda.southsumatera.CustomOnItemClickListener;
 import com.mediaanda.southsumatera.Destination;
+import com.mediaanda.southsumatera.Fragment.LesungBatuFragment;
+import com.mediaanda.southsumatera.Fragment.NapalLicinFragment;
 import com.mediaanda.southsumatera.R;
+import com.mediaanda.southsumatera.Fragment.TingkipTempleFragment;
 
 import java.util.List;
 
@@ -54,10 +57,17 @@ public class CardViewMurataraAdapter extends RecyclerView.Adapter<CardViewMurata
                 FragmentManager manager = ((AppCompatActivity)view.getContext()).getSupportFragmentManager();
                 FragmentTransaction ft = manager.beginTransaction();
                 if(position == 0){
-
+                    LesungBatuFragment lesungBatuFragment = new LesungBatuFragment();
+                    ft.replace(R.id.frame_container, lesungBatuFragment, "muratara");
+                } else if(position == 1){
+                    TingkipTempleFragment tingkipTempleFragment = new TingkipTempleFragment();
+                    ft.replace(R.id.frame_container, tingkipTempleFragment, "muratara");
+                } else if(position == 2){
+                    NapalLicinFragment napalLicinFragment = new NapalLicinFragment();
+                    ft.replace(R.id.frame_container, napalLicinFragment, "muratara");
                 }
 
-                //ft.addToBackStack("Palembang");
+                ft.addToBackStack("muratara");
                 ft.commit();
             }
         }));

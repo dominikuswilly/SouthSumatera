@@ -1,7 +1,6 @@
 package com.mediaanda.southsumatera.Adapter;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -16,7 +15,11 @@ import android.widget.TextView;
 
 import com.mediaanda.southsumatera.CustomOnItemClickListener;
 import com.mediaanda.southsumatera.Destination;
+import com.mediaanda.southsumatera.Fragment.KongerLakeFragment;
 import com.mediaanda.southsumatera.R;
+import com.mediaanda.southsumatera.Fragment.RakitHouseFragment;
+import com.mediaanda.southsumatera.Fragment.SekayuWaterfrontFragment;
+import com.mediaanda.southsumatera.Fragment.UlakLiaLakeFragment;
 
 import java.util.List;
 
@@ -57,6 +60,20 @@ public class CardViewMusiBanyuasinAdapter extends RecyclerView.Adapter<CardViewM
                 if(position == 0){
                    /* SembilangNationalFragment sembilangNationalFragment = new SembilangNationalFragment();
                     ft.replace(R.id.frame_container, sembilangNationalFragment, "Banyuasin");*/
+                    KongerLakeFragment kongerLakeFragment = new KongerLakeFragment();
+                    ft.replace(R.id.frame_container, kongerLakeFragment, "Musibanyuasin");
+                }
+                else if(position == 1){
+                    SekayuWaterfrontFragment sekayuWaterfrontFragment = new SekayuWaterfrontFragment();
+                    ft.replace(R.id.frame_container, sekayuWaterfrontFragment, "Musibanyuuasin");
+                }
+                else if(position == 2){
+                    UlakLiaLakeFragment ulakLiaLakeFragment = new UlakLiaLakeFragment();
+                    ft.replace(R.id.frame_container, ulakLiaLakeFragment, "Musibanyuasin");
+                }
+                else if(position == 3){
+                    RakitHouseFragment rakitHouseFragment = new RakitHouseFragment();
+                    ft.replace(R.id.frame_container, rakitHouseFragment, "Musibanyuasin");
                 }
 
                 ft.addToBackStack("Musibanyuasin");

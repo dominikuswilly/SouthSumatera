@@ -1,4 +1,4 @@
-package com.mediaanda.southsumatera.Fragment;
+package com.mediaanda.southsumatera;
 
 
 import android.os.Bundle;
@@ -58,7 +58,7 @@ public class DestinationFragment extends Fragment {
         listDestination.add(new Destination("Muara Enim", "No Description", R.mipmap.bedegung_waterfall));
         listDestination.add(new Destination("Musi Banyuasin", "No Description", R.mipmap.ulak_lia));
         listDestination.add(new Destination("Musi Rawas", "No Description", R.mipmap.aur_lake));
-        listDestination.add(new Destination("Musi Rawas Utara", "No Description", R.drawable.logo_south_sumatera));
+        listDestination.add(new Destination("Musi Rawas Utara", "No Description", R.mipmap.napal_licin));
         listDestination.add(new Destination("Ogan Komering Ilir", "No Description", R.drawable.logo_south_sumatera));
         listDestination.add(new Destination("Ogan Komering Ulu", "No Description", R.drawable.logo_south_sumatera));
         listDestination.add(new Destination("OKU Selatan", "No Description", R.drawable.logo_south_sumatera));

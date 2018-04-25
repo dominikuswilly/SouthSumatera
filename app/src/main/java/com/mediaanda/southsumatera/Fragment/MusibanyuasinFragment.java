@@ -49,10 +49,10 @@ public class MusibanyuasinFragment extends Fragment {
 
     private void initializeData(){
         listDestination = new ArrayList<>();
-        listDestination.add(new Destination("Konger Lake", getResources().getString(R.string.deskripsi_konger_lake), R.drawable.logo_south_sumatera));
+        listDestination.add(new Destination("Konger Lake", getResources().getString(R.string.deskripsi_konger_lake), R.mipmap.konger_lake));
         listDestination.add(new Destination("Sekayu Waterfront Park", getResources().getString(R.string.deskripsi_sekayu_waterfront_park), R.drawable.logo_south_sumatera));
-        listDestination.add(new Destination("Ulak Lia Lake", getResources().getString(R.string.deskripsi_ulak_lia_lake), R.drawable.logo_south_sumatera));
-        listDestination.add(new Destination("Rakit House", getResources().getString(R.string.deskripsi_rakit_house), R.drawable.logo_south_sumatera));
+        listDestination.add(new Destination("Ulak Lia Lake", getResources().getString(R.string.deskripsi_ulak_lia_lake), R.mipmap.ulak_lia));
+        listDestination.add(new Destination("Rakit House", getResources().getString(R.string.deskripsi_rakit_house), R.mipmap.rumah_panggung));
 
     }
 

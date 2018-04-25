@@ -11,10 +11,10 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class BedegungWaterfallFragment extends Fragment {
+public class TelukGelamLakeFragment extends Fragment {
 
 
-    public BedegungWaterfallFragment() {
+    public TelukGelamLakeFragment() {
         // Required empty public constructor
     }
 
@@ -22,11 +22,8 @@ public class BedegungWaterfallFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_bedegung_waterfall, container, false);
-
-
-        getActivity().setTitle("Bedegung Waterfall");
-        return view;
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_teluk_gelam_lake, container, false);
     }
 
 }

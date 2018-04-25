@@ -11,10 +11,10 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class BedegungRaftingFragment extends Fragment {
+public class MaspariIslandFragment extends Fragment {
 
 
-    public BedegungRaftingFragment() {
+    public MaspariIslandFragment() {
         // Required empty public constructor
     }
 
@@ -22,11 +22,8 @@ public class BedegungRaftingFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_bedegung_rafting, container, false);
-
-
-        getActivity().setTitle("Bedegung Rafting");
-        return view;
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_maspari_island, container, false);
     }
 
 }

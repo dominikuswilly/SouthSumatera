@@ -51,9 +51,9 @@ public class MurataraFragment extends Fragment {
     private void initializeData(){
         listDestination = new ArrayList<>();
         //listDestination.add(new Destination("Lesung Batu Temple", getResources().getString(R.string.deskripsi_sembilang_national_park), R.mipmap.sembilang));
-        listDestination.add(new Destination("Lesung Batu Temple", "No Description", R.drawable.logo_south_sumatera));
-        listDestination.add(new Destination("Tingkip Temple", "No Description", R.drawable.logo_south_sumatera));
-        listDestination.add(new Destination("Napal Licin Cave", "No Description", R.drawable.logo_south_sumatera));
+        listDestination.add(new Destination("Lesung Batu Temple", getResources().getString(R.string.deskripsi_lesung_batu), R.mipmap.lesung_batu));
+        listDestination.add(new Destination("Tingkip Temple", getResources().getString(R.string.deskripsi_tingkip_temple), R.mipmap.tingkip_temple));
+        listDestination.add(new Destination("Napal Licin Cave", getResources().getString(R.string.deskripsi_napal_licin), R.mipmap.napal_licin));
 
     }
 

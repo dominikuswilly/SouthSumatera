@@ -1,7 +1,6 @@
 package com.mediaanda.southsumatera.Adapter;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -14,9 +13,12 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.mediaanda.southsumatera.BedegungWaterfallFragment;
+import com.mediaanda.southsumatera.Fragment.BedegungRaftingFragment;
+import com.mediaanda.southsumatera.Fragment.BedegungWaterfallFragment;
 import com.mediaanda.southsumatera.CustomOnItemClickListener;
 import com.mediaanda.southsumatera.Destination;
+import com.mediaanda.southsumatera.Fragment.GemuhakHotSpringsFragment;
+import com.mediaanda.southsumatera.Fragment.NapalCarikFragment;
 import com.mediaanda.southsumatera.R;
 
 import java.util.List;
@@ -60,6 +62,15 @@ public class CardViewMuaraEnimAdapter extends RecyclerView.Adapter<CardViewMuara
                     ft.replace(R.id.frame_container, sembilangNationalFragment, "Banyuasin");*/
                     BedegungWaterfallFragment bedegungWaterfallFragment = new BedegungWaterfallFragment();
                     ft.replace(R.id.frame_container, bedegungWaterfallFragment, "Muaraenim");
+                } else if(position == 1){
+                    GemuhakHotSpringsFragment gemuhakHotSpringsFragment = new GemuhakHotSpringsFragment();
+                    ft.replace(R.id.frame_container, gemuhakHotSpringsFragment, "Muaraenim");
+                } else if(position == 2){
+                    NapalCarikFragment napalCarikFragment = new NapalCarikFragment();
+                    ft.replace(R.id.frame_container, napalCarikFragment, "Muaraenim");
+                } else if(position == 3){
+                    BedegungRaftingFragment bedegungRaftingFragment = new BedegungRaftingFragment();
+                    ft.replace(R.id.frame_container, bedegungRaftingFragment, "Muaraenim");
                 }
 
                 ft.addToBackStack("Muaraenim");

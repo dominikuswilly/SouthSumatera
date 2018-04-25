@@ -14,7 +14,6 @@ import android.view.Window;
 import android.view.WindowManager;
 
 import com.mediaanda.southsumatera.Fragment.AirportFragment;
-import com.mediaanda.southsumatera.Fragment.DestinationFragment;
 import com.mediaanda.southsumatera.Fragment.TaxiFragment;
 
 public class MainActivity extends AppCompatActivity

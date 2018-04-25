@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment.BedegungRaftingFragment">
+    tools:context=".Fragment.GegarLakeFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -11,21 +11,21 @@
         android:orientation="vertical">
 
         <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/cv_bedegungrafting1"
+            android:id="@+id/cv_gegarlake1"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_margin="5dp"
             card_view:cardCornerRadius="4dp">
 
             <ImageView
-                android:id="@+id/imgview_bedegungrafting"
+                android:id="@+id/imgview_gegarlake"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@mipmap/bedegung_rafting" />
+                android:src="@drawable/logo_south_sumatera" />
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/cv_bedegungrafting2"
+            android:id="@+id/cv_gegarlake2"
             android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
                 android:padding="10dp"
                 android:textSize="18dp"
                 android:typeface="sans"
-                android:text="@string/deskripsi_bedegung_rafting" />
+                android:text="@string/deskripsi_gegas_lake" />
         </android.support.v7.widget.CardView>
 
     </LinearLayout>
