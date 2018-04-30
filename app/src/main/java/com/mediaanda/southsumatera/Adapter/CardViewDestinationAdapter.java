@@ -29,9 +29,9 @@ import com.mediaanda.southsumatera.Fragment.OkiFragment;
 import com.mediaanda.southsumatera.Fragment.OkuFragment;
 import com.mediaanda.southsumatera.Fragment.OkusFragment;
 import com.mediaanda.southsumatera.Fragment.OkutFragment;
-import com.mediaanda.southsumatera.Fragment.PagaralamFragment;
 import com.mediaanda.southsumatera.Fragment.PaliFragment;
 import com.mediaanda.southsumatera.Fragment.PrabumulihFragment;
+import com.mediaanda.southsumatera.Fragment.PagaralamFragment;
 import com.mediaanda.southsumatera.R;
 
 import java.util.ArrayList;

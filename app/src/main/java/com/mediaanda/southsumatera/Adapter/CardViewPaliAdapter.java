@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.mediaanda.southsumatera.BumiAyuTempleFragment;
 import com.mediaanda.southsumatera.CustomOnItemClickListener;
 import com.mediaanda.southsumatera.Destination;
 import com.mediaanda.southsumatera.R;
@@ -53,11 +54,11 @@ public class CardViewPaliAdapter extends RecyclerView.Adapter<CardViewPaliAdapte
                 FragmentManager manager = ((AppCompatActivity)view.getContext()).getSupportFragmentManager();
                 FragmentTransaction ft = manager.beginTransaction();
                 if(position == 0){
-//                    SembilangNationalFragment sembilangNationalFragment = new SembilangNationalFragment();
-//                    ft.replace(R.id.frame_container, sembilangNationalFragment, "Banyuasin");
+                    BumiAyuTempleFragment bumiAyuTempleFragment = new BumiAyuTempleFragment();
+                    ft.replace(R.id.frame_container, bumiAyuTempleFragment, "pali");
                 }
 
-//                ft.addToBackStack("Palembang");
+                ft.addToBackStack("pali");
                 ft.commit();
             }
         }));

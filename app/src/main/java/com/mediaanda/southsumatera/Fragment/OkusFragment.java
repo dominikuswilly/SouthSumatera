@@ -49,7 +49,7 @@ public class OkusFragment extends Fragment {
 
     private void initializeData(){
         listDestination = new ArrayList<>();
-        listDestination.add(new Destination("Ranau Lake", getResources().getString(R.string.deskripsi_ranau_lake), R.drawable.logo_south_sumatera));
+        listDestination.add(new Destination("Ranau Lake", getResources().getString(R.string.deskripsi_ranau_lake), R.mipmap.ranau_lake));
         listDestination.add(new Destination("Mariza Island", getResources().getString(R.string.deskripsi_mariza_island), R.drawable.logo_south_sumatera));
 
     }

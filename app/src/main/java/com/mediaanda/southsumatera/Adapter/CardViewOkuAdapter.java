@@ -1,7 +1,6 @@
 package com.mediaanda.southsumatera.Adapter;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -16,7 +15,11 @@ import android.widget.TextView;
 
 import com.mediaanda.southsumatera.CustomOnItemClickListener;
 import com.mediaanda.southsumatera.Destination;
+import com.mediaanda.southsumatera.Fragment.KambasWaterfallFragment;
+import com.mediaanda.southsumatera.Fragment.PrincessCaveFragment;
 import com.mediaanda.southsumatera.R;
+import com.mediaanda.southsumatera.Fragment.TembulunWaterfallFragment;
+import com.mediaanda.southsumatera.Fragment.TigerCaveFragment;
 
 import java.util.List;
 
@@ -54,11 +57,23 @@ public class CardViewOkuAdapter extends RecyclerView.Adapter<CardViewOkuAdapter.
                 FragmentManager manager = ((AppCompatActivity)view.getContext()).getSupportFragmentManager();
                 FragmentTransaction ft = manager.beginTransaction();
                 if(position == 0){
-//                    SembilangNationalFragment sembilangNationalFragment = new SembilangNationalFragment();
-//                    ft.replace(R.id.frame_container, sembilangNationalFragment, "Banyuasin");
+                    PrincessCaveFragment princessCaveFragment = new PrincessCaveFragment();
+                    ft.replace(R.id.frame_container, princessCaveFragment, "oku");
+                }
+                else if(position == 1){
+                    TigerCaveFragment tigerCaveFragment = new TigerCaveFragment();
+                    ft.replace(R.id.frame_container, tigerCaveFragment, "oku");
+                }
+                else if(position == 2){
+                    TembulunWaterfallFragment tembulunWaterfallFragment = new TembulunWaterfallFragment();
+                    ft.replace(R.id.frame_container, tembulunWaterfallFragment, "oku");
+                }
+                else if(position == 3){
+                    KambasWaterfallFragment kambasWaterfallFragment = new KambasWaterfallFragment();
+                    ft.replace(R.id.frame_container, kambasWaterfallFragment, "oku");
                 }
 
-                //ft.addToBackStack("oku");
+                ft.addToBackStack("oku");
                 ft.commit();
             }
         }));

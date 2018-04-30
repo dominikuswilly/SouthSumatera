@@ -50,9 +50,9 @@ public class OkutFragment extends Fragment {
 
     private void initializeData(){
         listDestination = new ArrayList<>();
-        listDestination.add(new Destination("Martapura Town", "No Description", R.drawable.logo_south_sumatera));
-        listDestination.add(new Destination("Komering River", "No Description", R.drawable.logo_south_sumatera));
-        listDestination.add(new Destination("Martapura Town", "No Description", R.drawable.logo_south_sumatera));
+        listDestination.add(new Destination("Martapura Town", getResources().getString(R.string.deskripsi_martapura_town), R.mipmap.martapura_town));
+        listDestination.add(new Destination("Komering River", getResources().getString(R.string.deskripsi_komering_river), R.mipmap.komering_river));
+        listDestination.add(new Destination("Datuk Lake", getResources().getString(R.string.deskripsi_datuk_lake), R.drawable.logo_south_sumatera));
     }
 
     private void initializeAdapter(){

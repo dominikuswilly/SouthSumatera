@@ -17,6 +17,7 @@ import android.widget.TextView;
 import com.mediaanda.southsumatera.CustomOnItemClickListener;
 import com.mediaanda.southsumatera.Destination;
 import com.mediaanda.southsumatera.R;
+import com.mediaanda.southsumatera.TourismKampoengFragment;
 
 import java.util.List;
 
@@ -55,11 +56,11 @@ public class CardViewPrabumulihAdapter extends RecyclerView.Adapter<CardViewPrab
                 FragmentManager manager = ((AppCompatActivity)view.getContext()).getSupportFragmentManager();
                 FragmentTransaction ft = manager.beginTransaction();
                 if(position == 0){
-//                    SembilangNationalFragment sembilangNationalFragment = new SembilangNationalFragment();
-//                    ft.replace(R.id.frame_container, sembilangNationalFragment, "Banyuasin");
+                    TourismKampoengFragment tourismKampoengFragment = new TourismKampoengFragment();
+                    ft.replace(R.id.frame_container, tourismKampoengFragment, "prabumulih");
                 }
 
-//                ft.addToBackStack("Palembang");
+                ft.addToBackStack("prabumulih");
                 ft.commit();
             }
         }));

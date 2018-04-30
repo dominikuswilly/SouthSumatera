@@ -50,10 +50,10 @@ public class OkiFragment extends Fragment {
 
     private void initializeData(){
         listDestination = new ArrayList<>();
-        listDestination.add(new Destination("Teluk Gelam Lake", getResources().getString(R.string.deskripsi_teluk_gelam), R.drawable.logo_south_sumatera));
-        listDestination.add(new Destination("Maspari Island", "No Description", R.drawable.logo_south_sumatera));
-        listDestination.add(new Destination("Kayuagung", "No Description", R.drawable.logo_south_sumatera));
-        listDestination.add(new Destination("Bukit Batu", "No Description", R.drawable.logo_south_sumatera));
+        listDestination.add(new Destination("Teluk Gelam Lake", getResources().getString(R.string.deskripsi_teluk_gelam), R.mipmap.teluk_gelam));
+        listDestination.add(new Destination("Maspari Island", getResources().getString(R.string.deskripsi_maspari_island), R.mipmap.maspari));
+        listDestination.add(new Destination("Kayuagung", getResources().getString(R.string.deskripsi_kayuagung), R.mipmap.kayuagung));
+        listDestination.add(new Destination("Bukit Batu", getResources().getString(R.string.deskripsi_bukitbatu), R.mipmap.bukitbatu));
 
 
     }

@@ -49,11 +49,10 @@ public class OkuFragment extends Fragment {
 
     private void initializeData(){
         listDestination = new ArrayList<>();
-        listDestination.add(new Destination("Princess Cave", "No Description", R.drawable.logo_south_sumatera));
-        listDestination.add(new Destination("Tiger Cave", "No Description", R.drawable.logo_south_sumatera));
-        listDestination.add(new Destination("Tembulun Waterfall", "No Description", R.drawable.logo_south_sumatera));
-        listDestination.add(new Destination("Kambas Waterfall", "No Description", R.drawable.logo_south_sumatera));
-
+        listDestination.add(new Destination("Princess Cave", getResources().getString(R.string.deskripsi_putri_cave), R.mipmap.putri_cave));
+        listDestination.add(new Destination("Tiger Cave", getResources().getString(R.string.deskripsi_harimau_cave), R.mipmap.harimau_cave));
+        listDestination.add(new Destination("Tembulun Waterfall", getResources().getString(R.string.deskripsi_tembulun_waterfall), R.mipmap.tembulun_waterfall));
+        listDestination.add(new Destination("Kambas Waterfall", getResources().getString(R.string.deskripsi_kambas_waterfall), R.mipmap.kambas_waterfall));
 
     }
 

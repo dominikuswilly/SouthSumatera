@@ -1,7 +1,6 @@
 package com.mediaanda.southsumatera.Adapter;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -15,7 +14,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.mediaanda.southsumatera.CustomOnItemClickListener;
+import com.mediaanda.southsumatera.Fragment.DatukLakeFragment;
 import com.mediaanda.southsumatera.Destination;
+import com.mediaanda.southsumatera.Fragment.KomeringRiverFragment;
+import com.mediaanda.southsumatera.Fragment.MartapuraTownFragment;
 import com.mediaanda.southsumatera.R;
 
 import java.util.List;
@@ -55,11 +57,19 @@ public class CardViewOkuTimurAdapter extends RecyclerView.Adapter<CardViewOkuTim
                 FragmentManager manager = ((AppCompatActivity)view.getContext()).getSupportFragmentManager();
                 FragmentTransaction ft = manager.beginTransaction();
                 if(position == 0){
-//                    SembilangNationalFragment sembilangNationalFragment = new SembilangNationalFragment();
-//                    ft.replace(R.id.frame_container, sembilangNationalFragment, "Banyuasin");
+                    MartapuraTownFragment martapuraTownFragment = new MartapuraTownFragment();
+                    ft.replace(R.id.frame_container, martapuraTownFragment, "Martapura Town");
+                }
+                else if(position == 1){
+                    KomeringRiverFragment komeringRiverFragment = new KomeringRiverFragment();
+                    ft.replace(R.id.frame_container, komeringRiverFragment, "Komering River");
+                }
+                else if(position == 2){
+                    DatukLakeFragment datukLakeFragment = new DatukLakeFragment();
+                    ft.replace(R.id.frame_container, datukLakeFragment, "Datuk Lake");
                 }
 
-                //ft.addToBackStack("oku");
+                ft.addToBackStack("oku");
                 ft.commit();
             }
         }));

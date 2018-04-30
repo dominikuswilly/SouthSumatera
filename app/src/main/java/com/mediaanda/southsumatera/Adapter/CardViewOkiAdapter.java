@@ -1,7 +1,6 @@
 package com.mediaanda.southsumatera.Adapter;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -14,9 +13,13 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.mediaanda.southsumatera.Fragment.BukitBatuFragment;
 import com.mediaanda.southsumatera.CustomOnItemClickListener;
 import com.mediaanda.southsumatera.Destination;
+import com.mediaanda.southsumatera.Fragment.KayuagungFragment;
+import com.mediaanda.southsumatera.Fragment.MaspariIslandFragment;
 import com.mediaanda.southsumatera.R;
+import com.mediaanda.southsumatera.Fragment.TelukGelamLakeFragment;
 
 import java.util.List;
 
@@ -53,10 +56,22 @@ public class CardViewOkiAdapter extends RecyclerView.Adapter<CardViewOkiAdapter.
                 FragmentManager manager = ((AppCompatActivity)view.getContext()).getSupportFragmentManager();
                 FragmentTransaction ft = manager.beginTransaction();
                 if(position == 0){
-
+                    TelukGelamLakeFragment telukGelamLakeFragment = new TelukGelamLakeFragment();
+                    ft.replace(R.id.frame_container, telukGelamLakeFragment, "oki");
                 }
-
-                //ft.addToBackStack("oki");
+                else if(position == 1){
+                    MaspariIslandFragment maspariIslandFragment = new MaspariIslandFragment();
+                    ft.replace(R.id.frame_container, maspariIslandFragment, "oki");
+                }
+                else if(position == 2){
+                    KayuagungFragment kayuagungFragment = new KayuagungFragment();
+                    ft.replace(R.id.frame_container, kayuagungFragment, "oki");
+                }
+                else if(position == 3){
+                    BukitBatuFragment bukitBatuFragment = new BukitBatuFragment();
+                    ft.replace(R.id.frame_container, bukitBatuFragment, "oki");
+                }
+                ft.addToBackStack("oki");
                 ft.commit();
             }
         }));

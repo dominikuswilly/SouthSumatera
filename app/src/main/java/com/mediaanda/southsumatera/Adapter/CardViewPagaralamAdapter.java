@@ -16,7 +16,12 @@ import android.widget.TextView;
 
 import com.mediaanda.southsumatera.CustomOnItemClickListener;
 import com.mediaanda.southsumatera.Destination;
+import com.mediaanda.southsumatera.Fragment.LematangWaterfallFragment;
+import com.mediaanda.southsumatera.Fragment.MegalithSitesPagarAlamFragment;
+import com.mediaanda.southsumatera.Fragment.MountDempoFragment;
 import com.mediaanda.southsumatera.R;
+import com.mediaanda.southsumatera.Fragment.TeaPlantationFragment;
+import com.mediaanda.southsumatera.Fragment.TebatGhebanFragment;
 
 import java.util.List;
 
@@ -54,11 +59,23 @@ public class CardViewPagaralamAdapter extends RecyclerView.Adapter<CardViewPagar
                 FragmentManager manager = ((AppCompatActivity)view.getContext()).getSupportFragmentManager();
                 FragmentTransaction ft = manager.beginTransaction();
                 if(position == 0){
-//                    SembilangNationalFragment sembilangNationalFragment = new SembilangNationalFragment();
-//                    ft.replace(R.id.frame_container, sembilangNationalFragment, "Banyuasin");
+                    MountDempoFragment mountDempoFragment = new MountDempoFragment();
+                    ft.replace(R.id.frame_container, mountDempoFragment, "pagaralam");
+                } else if(position == 1){
+                    TeaPlantationFragment teaPlantationFragment = new TeaPlantationFragment();
+                    ft.replace(R.id.frame_container, teaPlantationFragment, "pagaralam");
+                } else if(position == 2){
+                    LematangWaterfallFragment lematangWaterfallFragment = new LematangWaterfallFragment();
+                    ft.replace(R.id.frame_container, lematangWaterfallFragment, "pagaralam");
+                } else if(position == 3){
+                    MegalithSitesPagarAlamFragment megalithSitesPagarAlamFragment = new MegalithSitesPagarAlamFragment();
+                    ft.replace(R.id.frame_container, megalithSitesPagarAlamFragment, "pagaralam");
+                } else if(position == 4){
+                    TebatGhebanFragment tebatGhebanFragment = new TebatGhebanFragment();
+                    ft.replace(R.id.frame_container, tebatGhebanFragment, "pagaralam");
                 }
 
-                //ft.addToBackStack("oku");
+                ft.addToBackStack("pagaralam");
                 ft.commit();
             }
         }));

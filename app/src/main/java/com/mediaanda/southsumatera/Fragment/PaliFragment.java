@@ -51,7 +51,7 @@ public class PaliFragment extends Fragment {
 
     private void initializeData(){
         listDestination = new ArrayList<>();
-        listDestination.add(new Destination("Bumi Ayu Temple", getResources().getString(R.string.deskripsi_bumi_ayu_temple), R.drawable.logo_south_sumatera));
+        listDestination.add(new Destination("Bumi Ayu Temple", getResources().getString(R.string.deskripsi_bumi_ayu_temple), R.mipmap.bumi_ayu));
 
     }
 

@@ -16,7 +16,9 @@ import android.widget.TextView;
 
 import com.mediaanda.southsumatera.CustomOnItemClickListener;
 import com.mediaanda.southsumatera.Destination;
+import com.mediaanda.southsumatera.Fragment.MarizaIslandFragment;
 import com.mediaanda.southsumatera.R;
+import com.mediaanda.southsumatera.Fragment.RanauLakeFragment;
 
 import java.util.List;
 
@@ -54,11 +56,14 @@ public class CardViewOkuSelatanAdapter extends RecyclerView.Adapter<CardViewOkuS
                 FragmentManager manager = ((AppCompatActivity)view.getContext()).getSupportFragmentManager();
                 FragmentTransaction ft = manager.beginTransaction();
                 if(position == 0){
-//                    SembilangNationalFragment sembilangNationalFragment = new SembilangNationalFragment();
-//                    ft.replace(R.id.frame_container, sembilangNationalFragment, "Banyuasin");
+                    RanauLakeFragment ranauLakeFragment = new RanauLakeFragment();
+                    ft.replace(R.id.frame_container, ranauLakeFragment, "okus");
+                } else if(position == 1){
+                    MarizaIslandFragment marizaIslandFragment = new MarizaIslandFragment();
+                    ft.replace(R.id.frame_container, marizaIslandFragment, "okus");
                 }
 
-//                ft.addToBackStack("Palembang");
+                ft.addToBackStack("okus");
                 ft.commit();
             }
         }));

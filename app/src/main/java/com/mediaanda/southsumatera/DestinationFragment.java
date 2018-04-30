@@ -44,7 +44,7 @@ public class DestinationFragment extends Fragment {
         initializeData();
         initializeAdapter();
 
-        getActivity().setTitle("South Sumatera");
+        getActivity().setTitle("South Sumatra");
         return view;
     }
 
@@ -59,12 +59,12 @@ public class DestinationFragment extends Fragment {
         listDestination.add(new Destination("Musi Banyuasin", "No Description", R.mipmap.ulak_lia));
         listDestination.add(new Destination("Musi Rawas", "No Description", R.mipmap.aur_lake));
         listDestination.add(new Destination("Musi Rawas Utara", "No Description", R.mipmap.napal_licin));
-        listDestination.add(new Destination("Ogan Komering Ilir", "No Description", R.drawable.logo_south_sumatera));
-        listDestination.add(new Destination("Ogan Komering Ulu", "No Description", R.drawable.logo_south_sumatera));
-        listDestination.add(new Destination("OKU Selatan", "No Description", R.drawable.logo_south_sumatera));
-        listDestination.add(new Destination("OKU Timur", "No Description", R.drawable.logo_south_sumatera));
-        listDestination.add(new Destination("Pagaralam", "No Description", R.drawable.logo_south_sumatera));
-        listDestination.add(new Destination("Pali", "No Description", R.drawable.logo_south_sumatera));
+        listDestination.add(new Destination("Ogan Komering Ilir", "No Description", R.mipmap.teluk_gelam));
+        listDestination.add(new Destination("Ogan Komering Ulu", "No Description", R.mipmap.putri_cave));
+        listDestination.add(new Destination("OKU Selatan", "No Description", R.mipmap.ranau_lake));
+        listDestination.add(new Destination("OKU Timur", "No Description", R.mipmap.komering_river));
+        listDestination.add(new Destination("Pagaralam", "No Description", R.mipmap.mount_dempo));
+        listDestination.add(new Destination("Pali", "No Description", R.mipmap.bumi_ayu));
         listDestination.add(new Destination("Prabumulih", "No Description", R.drawable.logo_south_sumatera));
 
     }
