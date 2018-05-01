@@ -1,7 +1,6 @@
 package com.mediaanda.southsumatera.Adapter;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -14,9 +13,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.mediaanda.southsumatera.BumiAyuTempleFragment;
+import com.mediaanda.southsumatera.Fragment.BumiAyuTempleFragment;
 import com.mediaanda.southsumatera.CustomOnItemClickListener;
-import com.mediaanda.southsumatera.Destination;
+import com.mediaanda.southsumatera.Fragment.Destination;
 import com.mediaanda.southsumatera.R;
 
 import java.util.List;

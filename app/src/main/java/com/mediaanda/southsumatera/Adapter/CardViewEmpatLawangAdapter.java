@@ -16,7 +16,7 @@ import android.widget.TextView;
 
 import com.mediaanda.southsumatera.Fragment.BatuBetangFragment;
 import com.mediaanda.southsumatera.CustomOnItemClickListener;
-import com.mediaanda.southsumatera.Destination;
+import com.mediaanda.southsumatera.Fragment.Destination;
 import com.mediaanda.southsumatera.Fragment.LubukTudungFragment;
 import com.mediaanda.southsumatera.R;
 import com.mediaanda.southsumatera.Fragment.TujuhPanggungFragment;

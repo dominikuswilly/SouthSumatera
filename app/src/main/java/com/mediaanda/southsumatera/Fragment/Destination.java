@@ -1,6 +1,5 @@
-package com.mediaanda.southsumatera;
+package com.mediaanda.southsumatera.Fragment;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Destination {

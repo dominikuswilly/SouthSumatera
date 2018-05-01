@@ -1,4 +1,4 @@
-package com.mediaanda.southsumatera;
+package com.mediaanda.southsumatera.Fragment;
 
 
 import android.os.Bundle;
@@ -7,14 +7,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.mediaanda.southsumatera.R;
+
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class TourismKampoengFragment extends Fragment {
+public class BumiAyuTempleFragment extends Fragment {
 
 
-    public TourismKampoengFragment() {
+    public BumiAyuTempleFragment() {
         // Required empty public constructor
     }
 
@@ -22,10 +24,10 @@ public class TourismKampoengFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_tourism_kampoeng, container, false);
+        View view = inflater.inflate(R.layout.fragment_bumi_ayu_temple, container, false);
 
 
-        getActivity().setTitle("Tourism Kampoeng");
+        getActivity().setTitle("Bumi Ayu Temple");
         return view;
     }
 

@@ -10,8 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.mediaanda.southsumatera.Adapter.CardViewPalembangAdapter;
-import com.mediaanda.southsumatera.Destination;
-import com.mediaanda.southsumatera.MainActivity;
 import com.mediaanda.southsumatera.R;
 
 import java.util.ArrayList;

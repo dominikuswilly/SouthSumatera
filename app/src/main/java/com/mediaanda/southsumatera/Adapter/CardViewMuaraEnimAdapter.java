@@ -16,7 +16,7 @@ import android.widget.TextView;
 import com.mediaanda.southsumatera.Fragment.BedegungRaftingFragment;
 import com.mediaanda.southsumatera.Fragment.BedegungWaterfallFragment;
 import com.mediaanda.southsumatera.CustomOnItemClickListener;
-import com.mediaanda.southsumatera.Destination;
+import com.mediaanda.southsumatera.Fragment.Destination;
 import com.mediaanda.southsumatera.Fragment.GemuhakHotSpringsFragment;
 import com.mediaanda.southsumatera.Fragment.NapalCarikFragment;
 import com.mediaanda.southsumatera.R;

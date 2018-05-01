@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 import com.mediaanda.southsumatera.CustomOnItemClickListener;
 import com.mediaanda.southsumatera.Fragment.DatukLakeFragment;
-import com.mediaanda.southsumatera.Destination;
+import com.mediaanda.southsumatera.Fragment.Destination;
 import com.mediaanda.southsumatera.Fragment.KomeringRiverFragment;
 import com.mediaanda.southsumatera.Fragment.MartapuraTownFragment;
 import com.mediaanda.southsumatera.R;

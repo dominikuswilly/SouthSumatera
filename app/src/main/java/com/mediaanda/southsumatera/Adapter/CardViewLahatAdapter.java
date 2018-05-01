@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 import com.mediaanda.southsumatera.Fragment.BidadariWaterfallFragment;
 import com.mediaanda.southsumatera.CustomOnItemClickListener;
-import com.mediaanda.southsumatera.Destination;
+import com.mediaanda.southsumatera.Fragment.Destination;
 import com.mediaanda.southsumatera.Fragment.MaungWaterfallFragment;
 import com.mediaanda.southsumatera.Fragment.MegalithSitesFragment;
 import com.mediaanda.southsumatera.R;

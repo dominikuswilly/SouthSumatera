@@ -9,9 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.mediaanda.southsumatera.Adapter.CardViewBanyuasinAdapter;
 import com.mediaanda.southsumatera.Adapter.CardViewEmpatLawangAdapter;
-import com.mediaanda.southsumatera.Destination;
 import com.mediaanda.southsumatera.R;
 
 import java.util.ArrayList;

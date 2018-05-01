@@ -25,6 +25,7 @@ public class PhoneFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        getActivity().setTitle("Phone");
         return inflater.inflate(R.layout.fragment_phone, container, false);
     }
 

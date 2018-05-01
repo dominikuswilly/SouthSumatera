@@ -17,7 +17,7 @@ import android.widget.TextView;
 import com.mediaanda.southsumatera.Fragment.BalaputeraDewaFragment;
 import com.mediaanda.southsumatera.Fragment.AlMunawarFragment;
 import com.mediaanda.southsumatera.CustomOnItemClickListener;
-import com.mediaanda.southsumatera.Destination;
+import com.mediaanda.southsumatera.Fragment.Destination;
 import com.mediaanda.southsumatera.Fragment.AmperaFragment;
 import com.mediaanda.southsumatera.Fragment.QuranFragment;
 import com.mediaanda.southsumatera.Fragment.JakabaringFragment;

@@ -14,7 +14,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.mediaanda.southsumatera.CustomOnItemClickListener;
-import com.mediaanda.southsumatera.Destination;
+import com.mediaanda.southsumatera.Fragment.Destination;
 import com.mediaanda.southsumatera.Fragment.KongerLakeFragment;
 import com.mediaanda.southsumatera.R;
 import com.mediaanda.southsumatera.Fragment.RakitHouseFragment;
