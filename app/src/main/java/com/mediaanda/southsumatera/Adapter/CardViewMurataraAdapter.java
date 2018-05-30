@@ -18,8 +18,8 @@ import com.mediaanda.southsumatera.CustomOnItemClickListener;
 import com.mediaanda.southsumatera.Fragment.Destination;
 import com.mediaanda.southsumatera.Fragment.LesungBatuFragment;
 import com.mediaanda.southsumatera.Fragment.NapalLicinFragment;
-import com.mediaanda.southsumatera.R;
 import com.mediaanda.southsumatera.Fragment.TingkipTempleFragment;
+import com.mediaanda.southsumatera.R;
 
 import java.util.List;
 
